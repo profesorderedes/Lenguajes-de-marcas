@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<aplicacion>
+    <creador>Carlos</creador>
+    <fecha>15 de septiembre</fecha>
+    <codigo>
+        <![CDATA[
+        cmbCursos = new JComboBox<String>();
+        cmbCursos.addItem("Selecciona un curso");
+        cmbCursos.addItem("1º ESO");
+        ]]>
+    </codigo>
+</aplicacion>
