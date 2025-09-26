@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personal>
+    <clientes_de_la_empresa>
+        <nombre>Juan García</nombre>
+        <nombre>Manuel Tendero</nombre>
+        <vip>
+            <nombre>David Sánchez</nombre>
+        </vip>
+    </clientes_de_la_empresa>
+    <empleados horas_trabajadas="500">
+        <empleado>Ana Rico</empleado>
+        <empleado>Lucía Sánchez</empleado>
+    </empleados>
+    
+</personal>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<empresa>
+    <nombre>Construcciones Miguel &amp; hijos</nombre>
+    <gerente>
+        <nombre>Pedro Ramírez</nombre>
+        <alias>&quot;Perico&quot;</alias>
+        <dni>20100200Y</dni>
+    </gerente>
+    <telefono>555 10 20 30</telefono>
+    <![CDATA[ 
+        NIF: <29199209H>
+    ]]>
+
+</empresa>

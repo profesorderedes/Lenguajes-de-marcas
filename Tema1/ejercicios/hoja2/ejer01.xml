@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<lista_reproduccion> 
+    
+    <cancion>
+        <artista>Reality</artista>
+        <titulo>Te diria</titulo>
+        <duracion>185</duracion>
+        <estilo_musica>Rap</estilo_musica>
+        <puntuacion>4</puntuacion>
+        <inicio>3</inicio>
+        <fin>182</fin>
+        <estilo_de_corte>fade in</estilo_de_corte>
+    </cancion>
+
+    <cancion>
+        <artista>Bad Gyal</artista>
+        <titulo>Da Me</titulo>
+        <duracion>144</duracion>
+        <estilo_musica>Trap</estilo_musica>
+        <puntuacion>5</puntuacion>
+        <inicio>6</inicio>
+        <fin>140</fin>
+        <estilo_de_corte>fade out</estilo_de_corte>
+    </cancion>
+
+    <cancion>
+        <artista>Lola Indigo</artista>
+        <titulo>LA REINA</titulo>
+        <duracion>149</duracion>
+        <estilo_musica>Reagueton</estilo_musica>
+        <puntuacion>5</puntuacion>
+        <inicio>3</inicio>
+        <fin>145</fin>
+        <estilo_de_corte>cut</estilo_de_corte>
+    </cancion>
+
+</lista_reproduccion>

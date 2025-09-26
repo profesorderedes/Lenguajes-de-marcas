@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<farmacia>
+    <medicamento>
+        <nombre>Paracetamol</nombre>
+        <sin_receta />
+    </medicamento>
+    <medicamento>
+        <nombre>Aspirina</nombre>
+        <sin_receta />
+    </medicamento>
+    <medicamento>
+        <nombre>Amoxicilina</nombre>
+        <con_receta />
+    </medicamento>
+    <medicamento>
+        <nombre>Nolotil</nombre>
+        <con_receta />
+    </medicamento>
+</farmacia>

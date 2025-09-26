@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<familia>
+    <padre>Pedro Álvarez</padre>
+    <madre>Luisa Robles</madre>
+    <hijos>
+        <hijo>Manuel Álvarez</hijo>
+        <hijo>Natalia Álvarez</hijo>
+    </hijos>
+   
+</familia>
