@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<factura num="999">
+    <datosEmpresa>
+        <Nombre>Equipos Digitales S.L</Nombre>
+        <direccion>Av. Valladolid, 28015 Madrid</direccion>
+        <cif>Q-9876543</cif>
+        <telefono>917 77 66 88</telefono>
+        <fax>917 77 66 88</fax>
+    </datosEmpresa>
+
+    <datosFacturaGeneral>
+        <fecha>12/09/2016</fecha>
+        <pedido>731</pedido>
+        <formaDePago>EFECTIVO</formaDePago>
+    </datosFacturaGeneral>
+
+    <datosCliente num="879">
+        <nombre>Carlos Sierra García</nombre>
+        <direccionEnvio>Av. Oporto num 7 piso 4 puerta D</direccionEnvio>
+        <poblacion>Madrid</poblacion>
+        <codigoPostal>28043</codigoPostal>
+        <provincia>Madrid</provincia>
+    </datosCliente>
+
+    <datosFactura>
+        <compra>
+            <producto>
+                <ref>INT791</ref>
+                <descripcion>PROCESADOR INTEL CORE I5-6500 3.2 GHZ SK1151 6MB 65W SKYLINE</descripcion>
+                <cantidad>1</cantidad>
+                <precio>178.00</precio>
+                <importe>178.00</importe>
+            </producto>
+            <producto>
+                <ref>GBY776</ref>
+                <descripcion>PLACA INTEL CORE I3/I5/I7 GIGABYTE GA-5110M-S2H SK1151 DDR4
+                    HDMI/DVI/USB3.0</descripcion>
+                <cantidad>1</cantidad>
+                <precio>54.00</precio>
+                <importe>54.00</importe>
+            </producto>
+            <producto>
+                <ref>KGN1974</ref>
+                <descripcion>MEMORIA 8GB DDR4 2133 KINGSTON HYPERX FURY BLACK CL-14</descripcion>
+                <cantidad>2</cantidad>
+                <precio>40.00</precio>
+                <importe>80.00</importe>
+            </producto>
+            <producto>
+                <ref>KGN2162</ref>
+                <descripcion>DISCO DURO 120GB 2.5&quot; KINGSTON SSD NOW SATA3 UV400 SERIES</descripcion>
+                <cantidad>1</cantidad>
+                <precio>36.00</precio>
+                <importe>36.00</importe>
+            </producto>
+        </compra>
+        <totales>
+            <baseImponible>346.00</baseImponible>
+            <IVA>21.00</IVA>
+            <importeIVA>73.08</importeIVA>
+            <totalFinal>421.08</totalFinal>
+        </totales>
+    </datosFactura>
+
+</factura>
