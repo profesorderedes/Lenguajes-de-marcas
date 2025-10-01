@@ -4,12 +4,12 @@
 <!-- El prefijo "c:" indica etiquetas de cliente -->
 <!-- El prefijo "a:" indica etiquetas de artículo -->
 
-<c:pedido xmlns:c = "http://www.papeleriaexpress.com/c" xmlns:a = "http://www.papeleriaexpress.com/a">
-    <c:cliente>
-        <c:id>DNI</c:id> <!-- Tipo de documento identificativo (DNI, pasaporte) -->
-        <c:id_valor>10200200R</c:id_valor>
-        <c:nombre>Lucía Ortiz</c:nombre>
-    </c:cliente>
+<pedido xmlns="http://www.papeleriaexpress.com/c" xmlns:a="http://www.papeleriaexpress.com/a">
+    <cliente>
+        <id>DNI</id> <!-- Tipo de documento identificativo (DNI, pasaporte) -->
+        <id_valor>10200200R</id_valor>
+        <nombre>Lucía Ortiz</nombre>
+    </cliente>
     <a:articulo>
         <a:id>205</a:id><!-- Código del producto -->
         <a:descripcion>Libreta Oxford A4</a:descripcion>
@@ -20,4 +20,4 @@
         <a:descripcion>Bolígrafo Pilot Extra</a:descripcion>
         <a:precio>2.15</a:precio>
     </a:articulo>
-</c:pedido>
+</pedido>

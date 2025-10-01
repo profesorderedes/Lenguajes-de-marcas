@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<horario xmlns="https://iessonferrer.net/horario">
+    <dia>
+        <hora empieza="15:10">SI</hora>
+        <hora empieza="16:05">SI</hora>
+        <hora empieza="17:00">ED</hora>
+        <hora empieza="17:55">PATIO</hora>
+        <hora empieza="18:15">PROG</hora>
+        <hora empieza="19:10">PROG</hora>
+        <hora empieza="20:05">LM</hora>
+    </dia>
+    <dia>
+        <hora empieza="15:10">ED</hora>
+        <hora empieza="16:05">BD</hora>
+        <hora empieza="17:00">BD</hora>
+        <hora empieza="17:55">PATIO</hora>
+        <hora empieza="18:15">BD</hora>
+        <hora empieza="19:10">SI</hora>
+        <hora empieza="20:05">SI</hora>
+    </dia>
+    <dia>
+        <hora empieza="15:10">PROG</hora>
+        <hora empieza="16:05">PROG</hora>
+        <hora empieza="17:00">LM</hora>
+        <hora empieza="17:55">PATIO</hora>
+        <hora empieza="18:15">LM</hora>
+        <hora empieza="19:10">BD</hora>
+        <hora empieza="20:05">BD</hora>
+    </dia>
+    <dia>
+        <hora empieza="15:10">BD</hora>
+        <hora empieza="16:05">IPO</hora>
+        <hora empieza="17:00">IPO</hora>
+        <hora empieza="17:55">PATIO</hora>
+        <hora empieza="18:15">IPO</hora>
+        <hora empieza="19:10">PROG</hora>
+        <hora empieza="20:05">PROG</hora>
+    </dia>
+    <dia>
+        <hora empieza="15:10">BD</hora>
+        <hora empieza="16:05">PROG</hora>
+        <hora empieza="17:00">LM</hora>
+        <hora empieza="17:55">PATIO</hora>
+        <hora empieza="18:15">LM</hora>
+        <hora empieza="19:10">DIG</hora>
+        <hora empieza="20:05">ED</hora>
+    </dia>
+</horario>
