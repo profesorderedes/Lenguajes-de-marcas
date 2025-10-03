@@ -1,0 +1,5 @@
+<!ELEMENT persona ANY>
+<!ATTLIST persona nombre CDATA #REQUIRED>
+<!ATTLIST persona apellidos CDATA #IMPLIED>
+
+<!ELEMENT edad ANY>

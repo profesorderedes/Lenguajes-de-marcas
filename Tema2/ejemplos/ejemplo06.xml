@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE persona SYSTEM "ejemplo06.dtd">
+
+<persona nombre="Carlos" apellidos="Sánchez">
+    <edad>47</edad>
+</persona>
