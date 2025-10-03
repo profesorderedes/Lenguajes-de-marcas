@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!DOCTYPE alumno SYSTEM "ejemplo01.dtd">
 
-<alumno>Federico López Roma</alumno>
+<alumno>
+    <apellidos>López Roma</apellidos>
+    <nombre>Federico</nombre>
+
+    <delegado />
+
+    <optativa>
+        <cultura_clasica />
+    </optativa>
+</alumno>

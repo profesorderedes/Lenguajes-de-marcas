@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE persona SYSTEM "ejemplo02.dtd">
+
+<persona>
+    <nombre>Amadeo</nombre>
+    <apellido>Martínez</apellido>
+    <apellido>López</apellido>
+    <apellido>López</apellido>
+
+</persona>
