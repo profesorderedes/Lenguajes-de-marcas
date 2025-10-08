@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ordenador>
+    <marca>HP</marca>
+    <modelo>Envy 9</modelo>
+    <placa_base procesador="Intel i9" ram="16" tipo_ram="DDR4" grafica="Iris XE">ASUS H810</placa_base>
+</ordenador>

@@ -1,0 +1,4 @@
+<!ELEMENT ordenador ANY>
+<!ELEMENT marca ANY>
+<!ELEMENT modelo ANY>
+<!ELEMENT placa_base ANY>
