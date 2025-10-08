@@ -1,4 +1,8 @@
-<!ELEMENT ordenador ANY>
-<!ELEMENT marca ANY>
-<!ELEMENT modelo ANY>
-<!ELEMENT placa_base ANY>
+<!ELEMENT ordenador (marca, modelo, placa_base)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT placa_base (#PCDATA)>
+<!ATTLIST placa_base procesador CDATA "Intel i7">
+<!ATTLIST placa_base ram CDATA #FIXED "16">
+<!ATTLIST placa_base tipo_ram CDATA #IMPLIED>
+<!ATTLIST placa_base grafica CDATA #REQUIRED>

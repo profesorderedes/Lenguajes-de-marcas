@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!DOCTYPE ordenador SYSTEM "ejemplo07.dtd">
+
 <ordenador>
     <marca>HP</marca>
     <modelo>Envy 9</modelo>
+    <!-- 
+    Restricciones:
+        - procesador: el valor por defecto es "Intel i7".
+        - ram: el único valor aceptable es 16.
+        - tipo_ram: es un atributo opcional.
+        - grafica: es un atributo obligatorio.
+    -->
     <placa_base procesador="Intel i9" ram="16" tipo_ram="DDR4" grafica="Iris XE">ASUS H810</placa_base>
 </ordenador>
