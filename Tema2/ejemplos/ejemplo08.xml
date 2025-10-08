@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alumno SYSTEM "ejemplo08.dtd">
+
+<!-- El atributo delegado puede tomar los valores "sí" o "no". Si no aparece, su valor por defecto
+es "no". -->
+<alumno nivel="2º Bachillerato" grupo="A" delegado="sí">
+    <nombre>Marta</nombre>
+    <apellidos>Lagos Andrés</apellidos>
+</alumno>
