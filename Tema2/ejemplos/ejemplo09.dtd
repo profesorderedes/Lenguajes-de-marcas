@@ -1,6 +1,13 @@
+<!ELEMENT taller (coche*, reparacion*)>
 <!ELEMENT coche (marca, modelo)>
 <!ATTLIST coche fecha_entrada NMTOKEN #REQUIRED>
 <!ATTLIST coche fechas_revisiones NMTOKENS #REQUIRED>
+<!ATTLIST coche matricula ID #REQUIRED>
 
 <!ELEMENT marca (#PCDATA)>
 <!ELEMENT modelo (#PCDATA)>
+<!ELEMENT reparacion (concepto, precio)>
+<!ATTLIST reparacion mat_vehiculo IDREF #REQUIRED>
+
+<!ELEMENT concepto (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>

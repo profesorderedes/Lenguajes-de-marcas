@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE coche SYSTEM "ejemplo09.dtd">
+<!DOCTYPE taller SYSTEM "ejemplo09.dtd">
 <taller>
     <coche matricula="MAT-1001BVC" fecha_entrada="2023-10-01"
         fechas_revisiones="2021-01-25 2022-01-28 2023-02-05">
@@ -12,4 +12,9 @@
         <marca>Kia</marca>
         <modelo>Stonic</modelo>
     </coche>
+
+    <reparacion mat_vehiculo="MAT-8329GHA">
+        <concepto>Pinchazo rueda trasera izquiera</concepto>
+        <precio>10</precio>
+    </reparacion>
 </taller>
