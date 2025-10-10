@@ -1,7 +1,7 @@
-<!ELEMENT biblioteca ANY>
-<!ELEMENT libro ANY>
-<!ATTLIST libro isbn CDATA #IMPLIED>
-<!ATTLIST libro editorial CDATA #IMPLIED>
+<!ELEMENT biblioteca (libro+)>
+<!ELEMENT libro (titulo, autor)>
+<!ATTLIST libro isbn ID #REQUIRED>
+<!ATTLIST libro editorial NMTOKEN #REQUIRED>
 
 <!ELEMENT titulo ANY>
 <!ELEMENT autor ANY>
