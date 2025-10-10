@@ -1,5 +1,6 @@
-<!ELEMENT coche ANY>
-<!ATTLIST coche fecha_entrada CDATA #IMPLIED    >
+<!ELEMENT coche (marca, modelo)>
+<!ATTLIST coche fecha_entrada NMTOKEN #REQUIRED>
+<!ATTLIST coche fechas_revisiones NMTOKENS #REQUIRED>
 
-<!ELEMENT marca ANY>
-<!ELEMENT modelo ANY>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
