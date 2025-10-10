@@ -1,0 +1,7 @@
+<!ELEMENT biblioteca ANY>
+<!ELEMENT libro ANY>
+<!ATTLIST libro isbn CDATA #IMPLIED>
+<!ATTLIST libro editorial CDATA #IMPLIED>
+
+<!ELEMENT titulo ANY>
+<!ELEMENT autor ANY>
