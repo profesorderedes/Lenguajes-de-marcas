@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="taller">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="coche" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+
+                <xs:element name="nombre_taller" fixed="Motor Son Ferrer" />
+
+                <xs:element name="antiguedad">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:nonNegativeInteger">
+                            <xs:maxInclusive value="120" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="propietario">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="5" />
+                            <xs:maxLength value="40" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="tipo_empresa">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="Autónomo" />
+                            <xs:enumeration value="SL" />
+                            <xs:enumeration value="SA" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

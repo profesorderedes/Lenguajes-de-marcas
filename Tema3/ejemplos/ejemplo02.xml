@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<taller xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ejemplo02.xsd">
+    
+    <coche>Peugeot 206</coche>
+    <coche>Seat Ibiza</coche>
+    <coche>Volkswagen Golf</coche>
+
+    <nombre_taller>Motor Son Ferrer</nombre_taller>
+
+    <!-- La antigüedad estará entre 0 y 120, ambos inclusive -->
+    <antiguedad>20</antiguedad>
+
+    <!-- El nombre del propietario tendrá entre 5 y 40 caracteres -->
+    <propietario>Manuel Antonio López</propietario>
+
+    <!-- Tipo de empresa: Autónomo, SL, SA -->
+    <tipo_empresa>Autónomo</tipo_empresa>
+    
+</taller>
