@@ -9,23 +9,9 @@
 
                 <xs:element name="farmacia" default="Farmacia Juaneda" />
 
-                <xs:element name="edad">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:integer">
-                            <xs:minInclusive value="0" />
-                            <xs:maxInclusive value="125" />
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:element>
+                <xs:element name="edad" type="TipoEdad" />
 
-                <xs:element name="nombre">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:minLength value="3" />
-                            <xs:maxLength value="30" />
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:element>
+                <xs:element name="nombre" type="TipoNombre" />
 
                 <xs:element name="pago">
                     <xs:simpleType>
@@ -70,7 +56,7 @@
                             <xs:element name="tomas" type="xs:positiveInteger" />
                             <xs:element name="horario" type="xs:string" />
                         </xs:sequence>
-                        <xs:attribute name="duracion" type="xs:string"/>
+                        <xs:attribute name="duracion" type="xs:string" />
                     </xs:complexType>
                 </xs:element>
 
@@ -80,15 +66,15 @@
 
                 <xs:element name="grupo_sanguineo">
                     <xs:complexType>
-                        <xs:attribute name="tipo" type="xs:string" use="required"/>
+                        <xs:attribute name="tipo" type="xs:string" use="required" />
                     </xs:complexType>
                 </xs:element>
 
                 <xs:element name="instrucciones">
                     <xs:complexType mixed="true">
                         <xs:choice maxOccurs="unbounded" minOccurs="0">
-                            <xs:element name="b" type="xs:string"/>
-                            <xs:element name="i" type="xs:string"/>
+                            <xs:element name="b" type="xs:string" />
+                            <xs:element name="i" type="xs:string" />
                         </xs:choice>
                     </xs:complexType>
                 </xs:element>
@@ -97,5 +83,20 @@
         </xs:complexType>
     </xs:element>
 
+    <!-- Tipos definidos por nosotros -->
+
+    <xs:simpleType name="TipoEdad">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="125" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TipoNombre">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3" />
+            <xs:maxLength value="30" />
+        </xs:restriction>
+    </xs:simpleType>
 
 </xs:schema>

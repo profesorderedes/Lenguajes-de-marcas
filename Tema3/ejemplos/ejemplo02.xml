@@ -24,5 +24,10 @@
     <!-- El dni es un atributo obligatorio y la titulación no lo es -->
     <mecanico dni="20199299R" titulacion="grado superior">Jaime Pérez</mecanico>
 
+    <!-- Dentro de isla puede aparecer el nombre de alguna de las islas de Baleares -->
+    <isla>
+        <Formentera />
+    </isla>
+
 
 </taller>
