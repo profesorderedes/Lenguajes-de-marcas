@@ -17,5 +17,8 @@
 
     <!-- Tipo de empresa: Autónomo, SL, SA -->
     <tipo_empresa>Autónomo</tipo_empresa>
+
+    <!-- La tarifa de reparación de un pinchazo es 10,5 euros  -->
+    <tarifa_pinchazos>10.5</tarifa_pinchazos>
     
 </taller>
