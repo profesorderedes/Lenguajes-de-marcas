@@ -2,7 +2,7 @@
 
 <taller xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="ejemplo02.xsd">
-    
+
     <coche>Peugeot 206</coche>
     <coche>Seat Ibiza</coche>
     <coche>Volkswagen Golf</coche>
@@ -18,7 +18,11 @@
     <!-- Tipo de empresa: Autónomo, SL, SA -->
     <tipo_empresa>Autónomo</tipo_empresa>
 
-    <!-- La tarifa de reparación de un pinchazo es 10,5 euros  -->
+    <!-- La tarifa de reparación de un pinchazo es de 10,5 euros  -->
     <tarifa_pinchazos>10.5</tarifa_pinchazos>
-    
+
+    <!-- El dni es un atributo obligatorio y la titulación no lo es -->
+    <mecanico dni="20199299R" titulacion="grado superior">Jaime Pérez</mecanico>
+
+
 </taller>

@@ -37,7 +37,19 @@
                     </xs:simpleType>
                 </xs:element>
 
-                
+                <xs:element name="tarifa_pinchazos">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:decimal">
+                            <xs:fractionDigits value="2" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="mecanico">
+                    <xs:complexType>
+                        
+                    </xs:complexType>
+                </xs:element>
 
             </xs:sequence>
         </xs:complexType>
