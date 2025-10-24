@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="patrones">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="patron">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <!-- Dos caracteres cualquiera (cifras o letras) -->
+                            <!-- <xs:pattern value=".." /> -->
+
+                            <!-- Dos cifras -->
+                            <!-- <xs:pattern value="\d\d" /> -->
+
+                            <!-- Un carácter cualquiera seguido de una cifra -->
+                            <!-- <xs:pattern value=".\d" /> -->
+
+                            <!-- Número de DNI sin letra al final (8 cifras) -->
+                            <!-- <xs:pattern value="\d{8}" /> -->
+
+                            <!-- Cualquier combinación de cifras (incluyendo no escribir nada). -->
+                            <!-- <xs:pattern value="\d*" /> -->
+
+                            <!-- Cualquier combinación de cifras con, al menos, una cifra. -->
+                            <xs:pattern value="" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
