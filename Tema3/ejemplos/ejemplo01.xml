@@ -7,7 +7,7 @@
     <medicamento>Omeprazol</medicamento>
 
     <farmacia>Farmacia Juaneda</farmacia>
-    
+
     <edad>70</edad>
 
     <nombre>Francisco Santos</nombre>
@@ -15,5 +15,7 @@
     <pago>Gratuito</pago>
 
     <dni>10918186q</dni>
+
+    <precio>16.51</precio>
 
 </receta>

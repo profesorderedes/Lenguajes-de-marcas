@@ -18,10 +18,10 @@
                     </xs:simpleType>
                 </xs:element>
 
-                <xs:element name="nombre" >
+                <xs:element name="nombre">
                     <xs:simpleType>
                         <xs:restriction base="xs:string">
-                            <xs:minLength value="3"/>
+                            <xs:minLength value="3" />
                             <xs:maxLength value="30" />
                         </xs:restriction>
                     </xs:simpleType>
@@ -30,9 +30,9 @@
                 <xs:element name="pago">
                     <xs:simpleType>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="Integro"/>
-                            <xs:enumeration value="Copago"/>
-                            <xs:enumeration value="Gratuito"/>
+                            <xs:enumeration value="Integro" />
+                            <xs:enumeration value="Copago" />
+                            <xs:enumeration value="Gratuito" />
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>
@@ -40,14 +40,22 @@
                 <xs:element name="dni">
                     <xs:simpleType>
                         <xs:restriction base="xs:string">
-                            <xs:pattern value="\d{8}[a-zA-Z]"/>
+                            <xs:pattern value="\d{8}[a-zA-Z]" />
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>
 
-            </xs:sequence> 
+                <xs:element name="precio">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:decimal">
+                            <xs:fractionDigits value="2" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+            </xs:sequence>
         </xs:complexType>
     </xs:element>
-    
+
 
 </xs:schema>
