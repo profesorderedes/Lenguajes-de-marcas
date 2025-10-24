@@ -24,7 +24,28 @@
                             <!-- <xs:pattern value="\d*" /> -->
 
                             <!-- Cualquier combinación de cifras con, al menos, una cifra. -->
-                            <xs:pattern value="" />
+                            <!-- <xs:pattern value="\d+" /> -->
+
+                            <!-- Una letra entre la A y la D seguida de dos cifras (puerta de
+                            embarque). -->
+                            <!-- <xs:pattern value="[A-D]\d\d" /> -->
+
+                            <!-- Una letra y una o dos cifras (puerta de embarque). -->
+                            <!-- <xs:pattern value="[A-D]\d\d?" /> -->
+
+                            <!-- Número de DNI con letra al final (8 cifras y letra). -->
+                            <!-- <xs:pattern value="\d{8}[A-Z]" /> -->
+
+                            <!-- Número de DNI con letra al final (8 cifras y letra). -->
+                            <!-- <xs:pattern value="\d{8}[A-Za-z]" /> -->
+
+                            <!-- Teléfono con prefijo internacional (el prefijo tiene de 1 a 4
+                            cifras, y el teléfono, 9). -->
+                            <!-- <xs:pattern value="\d{1,4} \d{9}" /> -->
+
+                            <!-- Teléfono con prefijo internacional (el prefijo tiene de 1 a 4
+                            cifras, y el teléfono, 9). Con un formato similar a: +34 971-230-470 -->
+                            <xs:pattern value="\+\d{1,4} \d{3}-\d{3}-\d{3}" />
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>
