@@ -23,21 +23,9 @@
                     </xs:simpleType>
                 </xs:element>
 
-                <xs:element name="dni">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:pattern value="\d{8}[a-zA-Z]" />
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:element>
+                <xs:element name="dni" type="TipoDni" />
 
-                <xs:element name="precio">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:decimal">
-                            <xs:fractionDigits value="2" />
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:element>
+                <xs:element name="precio" type="TipoPrecio" />
 
                 <xs:element name="medico">
                     <xs:complexType>
@@ -50,25 +38,13 @@
                     </xs:complexType>
                 </xs:element>
 
-                <xs:element name="posologia">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="tomas" type="xs:positiveInteger" />
-                            <xs:element name="horario" type="xs:string" />
-                        </xs:sequence>
-                        <xs:attribute name="duracion" type="xs:string" />
-                    </xs:complexType>
-                </xs:element>
+                <xs:element name="posologia" type="TipoPosologia" />
 
                 <xs:element name="alergia">
                     <xs:complexType />
                 </xs:element>
 
-                <xs:element name="grupo_sanguineo">
-                    <xs:complexType>
-                        <xs:attribute name="tipo" type="xs:string" use="required" />
-                    </xs:complexType>
-                </xs:element>
+                <xs:element name="grupo_sanguineo" type="TipoGrupoSanguineo" />
 
                 <xs:element name="instrucciones">
                     <xs:complexType mixed="true">
@@ -98,5 +74,29 @@
             <xs:maxLength value="30" />
         </xs:restriction>
     </xs:simpleType>
+
+    <xs:simpleType name="TipoDni">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{8}[a-zA-Z]" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TipoPrecio">
+        <xs:restriction base="xs:decimal">
+            <xs:fractionDigits value="2" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="TipoGrupoSanguineo">
+        <xs:attribute name="tipo" type="xs:string" use="required" />
+    </xs:complexType>
+
+    <xs:complexType name="TipoPosologia">
+        <xs:sequence>
+            <xs:element name="tomas" type="xs:positiveInteger" />
+            <xs:element name="horario" type="xs:string" />
+        </xs:sequence>
+        <xs:attribute name="duracion" type="xs:string" />
+    </xs:complexType>
 
 </xs:schema>

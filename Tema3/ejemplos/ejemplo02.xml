@@ -29,5 +29,18 @@
         <Formentera />
     </isla>
 
+    <!-- La etiqueta "multimarca" indica que el taller no es
+     un concesionario oficial -->
+    <multimarca/>
+
+    <!-- Pueden haber 0 o más etiquetas categoría, que siempre
+     estarán vacías con un atributo tipo. -->
+    <categoria tipo="ChapaYPintura" />
+    <categoria tipo="Electromecánica" />
+    <categoria tipo="Estructura" />
+
+    <descripcion>
+        El taller se encuentra en la <i>calle Cóndor, 9</i>, y realiza trabajos de todo tipo, especialmente <b>chapa y pintura</b>, <b>electromecánica</b> y <b>estructura</b>.
+    </descripcion>
 
 </taller>
