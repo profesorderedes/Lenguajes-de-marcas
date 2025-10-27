@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <receta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="ejemplo03.xsd">
+    xsi:noNamespaceSchemaLocation="ejemplo04.xsd">
 
     <medicamento>Paracetamol</medicamento>
     <medicamento>Omeprazol</medicamento>
@@ -27,7 +27,7 @@
 
     <alergia />
 
-    <grupo_sanguineo tipo="A+" />
+    <grupo_sanguineo tipo="AB-" />
 
     <instrucciones>Esta medicación debe tomarse en <b>ayunas</b>. No <i>deben superarse</i> los <b>cuatro</b>
         comprimidos al día. </instrucciones>
