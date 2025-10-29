@@ -78,19 +78,39 @@
         </xs:complexType>
     </xs:element>
 
-    <xs:attribute name="numColegiado" />
+    <xs:attribute name="numColegiado" type="xs:positiveInteger" />
 
-    <xs:element name="posologia" />
+    <xs:element name="posologia">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="tomas" />
+                <xs:element ref="horario" />
+            </xs:sequence>
+            <xs:attribute ref="duracion" />
+        </xs:complexType>
+    </xs:element>
 
-    <xs:attribute name="duracion" />
+    <xs:attribute name="duracion" type="xs:string" />
 
-    <xs:element name="tomas" />
+    <xs:element name="tomas">
+        <xs:simpleType>
+            <xs:restriction base="xs:positiveInteger">
+                <xs:maxInclusive value="8" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
 
-    <xs:element name="horario" />
+    <xs:element name="horario" type="xs:string" />
 
-    <xs:element name="alergia" />
+    <xs:element name="alergia">
+        <xs:complexType />
+    </xs:element>
 
-    <xs:element name="grupo_sanguineo" />
+    <xs:element name="grupo_sanguineo">
+        <xs:complexType>
+            <xs:attribute ref="tipo" use="required" />
+        </xs:complexType>
+    </xs:element>
 
     <xs:attribute name="tipo" />
 
