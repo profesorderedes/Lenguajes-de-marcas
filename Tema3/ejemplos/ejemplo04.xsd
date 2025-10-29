@@ -1,123 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- Justificación de por qué un esquema XSD puede volverse ilegible a medida que complicamos las
-restriccciones -->
-
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
     <xs:element name="receta">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="medicamento" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
-
-                <xs:element name="farmacia" default="Farmacia Juaneda" />
-
-                <xs:element name="edad">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:integer">
-                            <xs:minInclusive value="0" />
-                            <xs:maxInclusive value="125" />
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:element>
-
-                <xs:element name="nombre">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:minLength value="3" />
-                            <xs:maxLength value="30" />
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:element>
-
-                <xs:element name="pago">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="Integro" />
-                            <xs:enumeration value="Copago" />
-                            <xs:enumeration value="Gratuito" />
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:element>
-
-                <xs:element name="dni">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:pattern value="\d{8}[a-zA-Z]" />
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:element>
-
-                <xs:element name="precio">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:decimal">
-                            <xs:fractionDigits value="2" />
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:element>
-
-                <xs:element name="medico">
-                    <xs:complexType>
-                        <xs:simpleContent>
-                            <xs:extension base="xs:string">
-                                <xs:attribute name="numColegiado" type="xs:positiveInteger"
-                                    use="required" />
-                            </xs:extension>
-                        </xs:simpleContent>
-                    </xs:complexType>
-                </xs:element>
-
-                <xs:element name="posologia">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="tomas">
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:positiveInteger">
-                                        <xs:maxInclusive value="8" />
-                                    </xs:restriction>
-                                </xs:simpleType>
-                            </xs:element>
-                            <xs:element name="horario" type="xs:string" />
-                        </xs:sequence>
-                        <xs:attribute name="duracion" type="xs:string" />
-                    </xs:complexType>
-                </xs:element>
-
-                <xs:element name="alergia">
-                    <xs:complexType />
-                </xs:element>
-
-                <xs:element name="grupo_sanguineo">
-                    <xs:complexType>
-                        <xs:attribute name="tipo" use="required">
-                            <xs:simpleType>
-                                <xs:restriction base="xs:string">
-                                    <xs:enumeration value="0+" />
-                                    <xs:enumeration value="0-" />
-                                    <xs:enumeration value="A+" />
-                                    <xs:enumeration value="A-" />
-                                    <xs:enumeration value="B+" />
-                                    <xs:enumeration value="B-" />
-                                    <xs:enumeration value="AB+" />
-                                    <xs:enumeration value="AB-" />
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:attribute>
-                    </xs:complexType>
-                </xs:element>
-
-                <xs:element name="instrucciones">
-                    <xs:complexType mixed="true">
-                        <xs:choice maxOccurs="unbounded" minOccurs="0">
-                            <xs:element name="b" type="xs:string" />
-                            <xs:element name="i" type="xs:string" />
-                        </xs:choice>
-                    </xs:complexType>
-                </xs:element>
-
+                <xs:element ref="medicamento" maxOccurs="unbounded" />
+                <xs:element ref="farmacia" />
+                <xs:element ref="edad" />
+                <xs:element ref="nombre" />
+                <xs:element ref="pago" />
+                <xs:element ref="dni" />
+                <xs:element ref="precio" />
+                <xs:element ref="medico" />
+                <xs:element ref="posologia" />
+                <xs:element ref="alergia" />
+                <xs:element ref="grupo_sanguineo" />
+                <xs:element ref="instrucciones" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
 
+    <xs:element name="medicamento" type="xs:string" />
+
+    <xs:element name="farmacia" type="xs:string" default="Farmacia Juaneda" />
+
+    <xs:element name="edad">
+        <xs:simpleType>
+            <xs:restriction base="xs:nonNegativeInteger">
+                <xs:maxInclusive value="125" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="nombre">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="3" />
+                <xs:maxLength value="30" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="pago">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Gratuito" />
+                <xs:enumeration value="Copago" />
+                <xs:enumeration value="Entero" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="dni">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="\d{8}[a-zA-Z]" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="precio">
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:fractionDigits value="2" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="medico">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="numColegiado" use="required" />
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="numColegiado" />
+
+    <xs:element name="posologia" />
+
+    <xs:attribute name="duracion" />
+
+    <xs:element name="tomas" />
+
+    <xs:element name="horario" />
+
+    <xs:element name="alergia" />
+
+    <xs:element name="grupo_sanguineo" />
+
+    <xs:attribute name="tipo" />
+
+    <xs:element name="instrucciones" />
+
+    <xs:element name="b" />
+
+    <xs:element name="i" />
 
 </xs:schema>
