@@ -2,8 +2,10 @@
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-    <xs:element name="classe" />
-    
+    <xs:element name="classe">
+        
+    </xs:element>
+
     <xs:attribute name="modul" />
 
     <xs:attribute name="nommodul" />
