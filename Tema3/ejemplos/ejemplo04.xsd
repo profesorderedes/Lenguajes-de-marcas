@@ -112,12 +112,32 @@
         </xs:complexType>
     </xs:element>
 
-    <xs:attribute name="tipo" />
+    <xs:attribute name="tipo">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="0+" />
+                <xs:enumeration value="0-" />
+                <xs:enumeration value="A+" />
+                <xs:enumeration value="A-" />
+                <xs:enumeration value="B+" />
+                <xs:enumeration value="B-" />
+                <xs:enumeration value="AB+" />
+                <xs:enumeration value="AB-" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
 
-    <xs:element name="instrucciones" />
+    <xs:element name="instrucciones">
+        <xs:complexType mixed="true">
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element ref="b" />
+                <xs:element ref="i" />
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
 
-    <xs:element name="b" />
+    <xs:element name="b" type="xs:string" />
 
-    <xs:element name="i" />
+    <xs:element name="i" type="xs:string" />
 
 </xs:schema>
