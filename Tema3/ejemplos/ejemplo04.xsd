@@ -115,14 +115,7 @@
     <xs:attribute name="tipo">
         <xs:simpleType>
             <xs:restriction base="xs:string">
-                <xs:enumeration value="0+" />
-                <xs:enumeration value="0-" />
-                <xs:enumeration value="A+" />
-                <xs:enumeration value="A-" />
-                <xs:enumeration value="B+" />
-                <xs:enumeration value="B-" />
-                <xs:enumeration value="AB+" />
-                <xs:enumeration value="AB-" />
+                <xs:pattern value="(0|A|B|AB)[+-]" />
             </xs:restriction>
         </xs:simpleType>
     </xs:attribute>
