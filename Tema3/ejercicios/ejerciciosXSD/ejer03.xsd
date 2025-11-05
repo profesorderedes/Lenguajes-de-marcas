@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="tourGuide" />
+
+    <xs:element name="city" />
+
+    <xs:element name="adminUnit" />
+
+    <xs:element name="country" />
+
+    <xs:element name="population" />
+
+    <xs:element name="area" />
+
+    <xs:element name="elevation" />
+
+    <xs:element name="longitude" />
+
+    <xs:element name="latitude" />
+
+    <xs:element name="description" />
+    
+    <xs:element name="history" />
+
+</xs:schema>
