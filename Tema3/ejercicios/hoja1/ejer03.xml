@@ -3,7 +3,7 @@
 <!--
 Feu un esquema per documents com aquest.
 Notes:
-L'id de la oferta ha d'esser un enter major d'1.
+L'id de la oferta ha d'esser un enter major o igual a 1.
 El nom de la oferta pot anar dins una etiqueta nom.
 La velocitat de transferència pot estar en Kbps, Mbps o Gbps
 La moneda del preu serà un valor fix Euro.
@@ -114,7 +114,7 @@ L'atribut quantitat pot prendre valors sense decimals sencers positius amb el 0 
 
     <oferta id="6">
         <nom>ASDL Rural</nom>
-        <nom_companyia>Orange </nom_companyia>
+        <nom_companyia>Orange</nom_companyia>
         <velocitat_transferencia unitat="Mbps">
             <pujada>0.512</pujada>
             <baixada>6</baixada>
