@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="control_acceso">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="personal" />
+                <xs:element ref="ubicaciones" />
+                <xs:element ref="mensaje_error" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="personal">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="persona" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="persona">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombre" />
+                <xs:element ref="acceso" />
+            </xs:sequence>
+            <xs:attribute ref="cargo" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="cargo" default="empleado">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="director" />
+                <xs:enumeration value="jefe" />
+                <xs:enumeration value="empleado" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:element name="nombre">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="5" />
+                <xs:maxLength value="30" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="acceso">
+        <xs:complexType>
+            <xs:attribute ref="cod_ubicaciones" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="cod_ubicaciones" type="xs:IDREFS" />
+
+    <xs:element name="ubicaciones">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="ubicacion" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="ubicacion">
+        <xs:complexType>
+            <xs:all>
+                <xs:element ref="nombre" />
+                <xs:element ref="planta" />
+            </xs:all>
+            <xs:attribute ref="nivel_seguridad" use="required" />
+            <xs:attribute ref="codigo" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="nivel_seguridad">
+        <xs:simpleType>
+            <xs:restriction base="xs:positiveInteger">
+                <xs:maxInclusive value="20" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="codigo">
+        <xs:simpleType>
+            <xs:restriction base="xs:ID">
+                <xs:pattern value="[A-Z]{1,3}\d" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:element name="planta" type="xs:nonNegativeInteger" />
+
+    <xs:element name="mensaje_error">
+        <xs:complexType mixed="true">
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element ref="b" />
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="b" type="xs:string" />
+
+</xs:schema>

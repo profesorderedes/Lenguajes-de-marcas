@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<control_acceso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="control_acceso.xsd">
+
+    <personal>
+
+        <persona cargo="director">
+            <nombre>María Ochoa Rodríguez</nombre>
+            <acceso cod_ubicaciones="SCT1 LV1 CC3 AMO7" />
+        </persona>
+
+        <persona cargo="jefe">
+            <nombre>Laura Vallés García</nombre>
+            <acceso cod_ubicaciones="SCT1 LV1 AMO7" />
+        </persona>
+
+        <persona cargo="empleado">
+            <nombre>Rocío Ortega Jiménez</nombre>
+            <acceso cod_ubicaciones="SCT1 LV1" />
+        </persona>
+
+        <persona cargo="empleado">
+            <nombre>Lorena Gil Marqués</nombre>
+            <acceso cod_ubicaciones="SCT1 CC3" />
+        </persona>
+
+    </personal>
+
+    <ubicaciones>
+
+        <ubicacion nivel_seguridad="1" codigo="SCT1">
+            <nombre>Sala común de trabajo</nombre>
+            <planta>0</planta>
+        </ubicacion>
+
+        <ubicacion nivel_seguridad="20" codigo="LV1">
+            <planta>1</planta>
+            <nombre>Laboratorio vírico nº1</nombre>
+        </ubicacion>
+
+        <ubicacion nivel_seguridad="3" codigo="CC3">
+            <nombre>Centro de computación</nombre>
+            <planta>2</planta>
+        </ubicacion>
+
+        <ubicacion nivel_seguridad="20" codigo="AMO7">
+            <nombre>Almacén de muestras orgánicas</nombre>
+            <planta>1</planta>
+        </ubicacion>
+
+    </ubicaciones>
+
+    <mensaje_error>No tiene acceso a esta ubicación. <b>Póngase en contacto con el administrador de
+        la red.</b></mensaje_error>
+
+</control_acceso>
