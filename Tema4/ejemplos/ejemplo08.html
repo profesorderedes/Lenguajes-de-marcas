@@ -6,17 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo 8</title>
     <style>
-        table{
+        table {
             border: 1px solid black;
             border-collapse: collapse;
             background-color: rgba(246, 132, 90, 0.382);
+            /* border-spacing: 50px; */
         }
 
-        th, td{
+        th,
+        td {
             border: 1px solid black;
             text-align: center;
             width: 150px;
             padding: 6px;
+        }
+
+        .fin_de_semana {
+            background-color: rgb(187, 244, 188);
         }
     </style>
 </head>
@@ -32,6 +38,8 @@
             <th>Miércoles</th>
             <th>Jueves</th>
             <th>Viernes</th>
+            <th class="fin_de_semana">Sábado</th>
+            <th class="fin_de_semana">Domingo</th>
         </tr>
         <tr>
             <td>SI</td>
@@ -39,6 +47,8 @@
             <td>LM</td>
             <td></td>
             <td>BD</td>
+            <td class="fin_de_semana" rowspan="7">Estudiar</td>
+            <td class="fin_de_semana" rowspan="7">Estudiar</td>
         </tr>
         <tr>
             <td>SI</td>
@@ -55,11 +65,7 @@
             <td>LM</td>
         </tr>
         <tr>
-            <td>P</td>
-            <td>A</td>
-            <td>T</td>
-            <td>I</td>
-            <td>O</td>
+            <td colspan="5">PATIO</td>
         </tr>
         <tr>
             <td>PROG</td>
