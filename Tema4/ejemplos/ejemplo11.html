@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 11</title>
+</head>
+
+<body>
+    <h1>Formularios</h1>
+
+    <form action="tramitar.php" method="get" autocomplete="on">
+
+        <label for="nombre">Nombre</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="apellidos">Apellidos</label><br>
+        <input type="text" id="apellidos" name="apellidos"><br><br>
+
+        Elige tu serie favorita:<br>
+        <input type="radio" id="juego_de_tronos" name="serie" value="juego_de_tronos" checked>
+        <label for="juego_de_tronos">Juego de tronos</label><br>
+
+        <input type="radio" id="breaking_bad" name="serie" value="breaking_bad">
+        <label for="breaking_bad">Breaking bad</label><br>
+
+        <input type="radio" id="casa_de_papel" name="serie" value="casa_de_papel">
+        <label for="casa_de_papel">Casa de papel</label><br><br>
+
+        Cómo ves las series: <br>
+        <input type="checkbox" name="formato" id="television" value="television">
+        <label for="television">Televisión</label><br>
+
+        <input type="checkbox" name="formato" id="ordenador" value="ordenador">
+        <label for="ordenador">Ordenador</label><br>
+
+        <input type="checkbox" name="formato" id="movil_tablet" value="movil_tablet" checked>
+        <label for="movil_tablet">Móvil / tablet</label>
+
+        <br><br>
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+
+</html>
