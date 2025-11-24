@@ -26,14 +26,14 @@
             <legend>Encuesta</legend>
 
             Elije tus paises favoritos:<br>
-            <select name="pais" id="pais" size="3" multiple>
+            <select name="pais" id="pais" size="3" multiple autofocus>
                 <option value="espanya">España</option>
                 <option value="francia">Francia</option>
                 <option value="portugal">Portugal</option>
             </select><br><br>
 
             <label for="comentarios">Comentarios</label><br>
-            <textarea name="comentarios" id="comentarios"></textarea><br>
+            <textarea name="comentarios" id="comentarios" placeholder="Escribe tus comentarios sobre la web..."></textarea><br>
 
             <label for="password">Contraseña</label><br>
             <input type="password" name="password" id="password"><br>
@@ -48,7 +48,7 @@
             <input type="date" name="nacimiento" id="nacimiento"><br>
 
             <label for="correo">Cuenta de correo</label><br>
-            <input type="email" name="correo" id="correo"><br>
+            <input type="email" name="correo" id="correo" maxlength="30" required><br>
 
             <br>
             <input type="submit" value="Enviar">
