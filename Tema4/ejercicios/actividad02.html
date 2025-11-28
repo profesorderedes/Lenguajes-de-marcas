@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2</title>
+    <style>
+        fieldset {
+            width: 400px;
+        }
+
+        textarea {
+            width: 220px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulario de Inscripción</h1>
+
+    <p>Rellena el siguiente formulario de inscripción.</p>
+
+    <form action="encuesta.php" method="POST" autocomplete="on">
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label for="nombre">Nombre</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="apellidos">Apellidos</label><br>
+            <input type="text" id="apellidos" name="apellidos"><br>
+            <label for="fecha_nacimiento">Fecha de nacimiento</label><br>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br>
+
+            Estado civil <br>
+            <input type="radio" id="soltero" name="estado_civil" value="soltero" checked>
+            <label for="soltero">Soltero</label><br>
+            <input type="radio" id="casado" name="estado_civil" value="casado">
+            <label for="casado">Casado</label><br>
+
+            <label for="direccion">Dirección</label><br>
+            <input type="text" id="direccion" name="direccion"><br>
+
+            Isla <br>
+            <select name="isla" id="isla">
+                <option value="Mallorca">Mallorca</option>
+                <option value="Menorca">Menorca</option>
+                <option value="Ibiza">Ibiza</option>
+                <option value="Formentera">Formentera</option>
+            </select><br>
+
+            <label for="color_preferido">Color preferido</label><br>
+            <input type="color" name="color_preferido" id="color_preferido"><br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Contacto</legend>
+
+            <label for="email">Correo electrónico</label><br>
+            <input type="email" name="email" id="email"><br>
+            <label for="password">Contraseña</label><br>
+            <input type="password" name="password" id="password"><br>
+
+            <input type="checkbox" id="publicidad" name="publicidad" value="publicidad">
+            <label for="publicidad">Deseo recibir publicidad</label><br>
+            <input type="checkbox" id="terminos" name="terminos" value="terminos">
+            <label for="terminos">Acepto los términos</label><br>
+
+            <label for="comentarios">Comentarios finales</label><br>
+            <textarea name="comentarios" id="comentarios"
+                placeholder="Escribe aqui cualquier observación que se te ocurra"></textarea><br>
+
+        </fieldset>
+
+        <br><input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+
+    </form>
+
+</body>
+
+</html>
