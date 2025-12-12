@@ -6,21 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo 11</title>
     <style>
-        h1{
+        h1 {
             /* text-transform: capitalize; */
             font-variant: small-caps;
         }
 
-        a{
+        a {
             text-decoration: none;
             color: salmon;
         }
 
-        .resaltado{
+        .resaltado {
             text-decoration-line: overline;
             text-decoration-style: dashed;
             text-decoration-color: crimson;
             text-decoration-thickness: 4px;
+        }
+
+        .indentado {
+            text-indent: 30px;
+        }
+
+        .espaciado {
+            letter-spacing: 5px;
+        }
+
+        .espaciado_palabras {
+            word-spacing: 7px;
+        }
+
+        .altura_lineas{
+            line-height: 1.6;
+        }
+
+        .espacios_en_blanco{
+            white-space: nowrap;
         }
     </style>
 </head>
@@ -30,7 +50,38 @@
 
     <p>Puedes visitar <a href="https://www.wikipedia.org">Wikipedia</a> para ampliar más sobre el tema.</p>
 
-    <p>El <span class="resaltado">lenguaje HTML</span> permite crear la estructura de una página web. Y el CSS, su apariencia.</p>
+    <p>El <span class="resaltado">lenguaje HTML</span> permite crear la estructura de una página web. Y el CSS, su
+        apariencia.</p>
+
+    <p class="indentado">Texto indentado. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione deleniti,
+        asperiores voluptate exercitationem
+        qui quidem, distinctio accusamus repellendus eum neque nam fuga iste error corrupti officia quas minima dolorem.
+        Repudiandae deleniti odio, tempore quidem maxime nostrum expedita atque consequuntur? Voluptas, aut. Quaerat
+        repellendus cumque quasi corrupti aspernatur consequuntur debitis sapiente!</p>
+
+    <p class="espaciado">Texto espaciado. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eum quidem
+        beatae velit aliquam. Inventore aspernatur dolorem atque ipsum. Voluptate ab, saepe quos asperiores doloribus
+        neque aliquid id! Quis, corrupti recusandae. Id accusantium labore earum, delectus eveniet odit ducimus
+        doloremque commodi molestiae, error quod debitis nam asperiores. Mollitia, dolorum rem.</p>
+
+    <p class="espaciado_palabras">Palabras espaciadas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+        vitae consectetur explicabo quidem maiores numquam libero atque incidunt aliquid adipisci. Omnis voluptas
+        consequatur, quibusdam quidem eaque, eum eveniet ratione ipsa consectetur sunt ea voluptatum enim, commodi ipsum
+        magnam! Similique quod impedit minima ad corrupti nobis natus sit ea optio blanditiis?</p>
+
+    <p class="altura_lineas">Separación entre líneas. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Quibusdam nam quam cum, vel itaque iusto! Ab, laudantium quia corrupti sunt temporibus laboriosam magnam eum
+        obcaecati tempora quidem nesciunt ipsam quos alias asperiores. Veniam id sequi dolores mollitia, quidem debitis
+        reiciendis suscipit enim expedita officia eos eius odit laborum earum aut.</p>
+
+    <p class="espacios_en_blanco">Espacios       en     blanco.
+        Esta línea aparece debajo de la primera.
+
+
+
+        Esta línea es muy larga Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci animi nobis neque distinctio fugiat repudiandae ab recusandae dolore, nisi sed. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente expedita quis ipsa voluptate reprehenderit enim, porro est eius vitae explicabo, error fuga magnam. Doloribus voluptatibus obcaecati pariatur? Itaque enim dicta adipisci facere debitis delectus sapiente fuga praesentium minus cupiditate nemo est, excepturi porro, molestiae minima ipsam. Ex, labore facilis quisquam accusamus enim velit earum, obcaecati qui inventore nihil esse repudiandae?
+    </p>
+
 </body>
 
 </html>
