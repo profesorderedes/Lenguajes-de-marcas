@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 16</title>
+    <style>
+        .parrafo1 {
+            font-size: 1rem;
+        }
+
+        .parrafo2 {
+            font-size: 2rem;
+        }
+
+        div {
+            font-size: 24px;
+            border: 1px solid crimson;
+        }
+
+        .parrafo3 {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Unidades rem</h1>
+
+    <p>Este texto tiene el tamaño predeterminado (16px).</p>
+
+    <!-- Este párrafo tiene el mismo tamaño de letra que el body (1*16 = 16px). -->
+    <p class="parrafo1">Este texto tiene un tamaño de 1rem.</p>
+
+    <!-- Este párrafo tiene doble tamaño de letra que el body (2*16 = 32px). -->
+    <p class="parrafo2">Este texto tiene un tamaño de 2rem.</p>
+
+    <div>
+        <!-- Este párrafo tiene doble tamaño de letra que el body (2*16 = 32px)). -->
+        <p class="parrafo3">Este texto tiene un tamaño de 2rem, y da igual que esté en un contenedor con letra más grande.
+        </p>
+    </div>
+</body>
+
+</html>

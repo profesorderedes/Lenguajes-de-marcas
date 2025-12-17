@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 15</title>
+    <style>
+        .parrafo1 {
+            font-size: 1em;
+        }
+
+        .parrafo2 {
+            font-size: 2em;
+        }
+
+        div {
+            font-size: 24px;
+            border: 1px solid crimson;
+        }
+
+        .parrafo3 {
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Unidades em</h1>
+
+    <p>Este texto tiene el tamaño predeterminado (16px).</p>
+
+    <!-- Este párrafo tiene el mismo tamaño de letra que su contenedor (1*16 = 16px). -->
+    <p class="parrafo1">Este texto tiene un tamaño de 1em.</p>
+
+    <!-- Este párrafo tiene doble tamaño de letra que su contenedor (2*16 = 32px). -->
+    <p class="parrafo2">Este texto tiene un tamaño de 2em.</p>
+
+    <div>
+        <!-- Este párrafo tiene doble tamaño de letra que su contenedor (2*24 = 48px)). -->
+        <p class="parrafo3">Este texto tiene un tamaño de 2em, pero está en un contenedor que tiene letra más grande.
+        </p>
+    </div>
+</body>
+
+</html>
