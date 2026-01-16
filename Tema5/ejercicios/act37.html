@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 37</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .contenedor {
+            position: relative;
+            width: max-content;
+            margin: auto;
+        }
+
+        img {
+            height: 100vh;
+        }
+
+        .absolute {
+            position: absolute;
+            padding: 10px;
+            background-color: rgba(245, 245, 245, 0.5);
+            border-radius: 5px;
+        }
+
+        .titulo {
+            top: 50px;
+            left: 50px;
+        }
+
+        .autor {
+            bottom: 50px;
+            right: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="contenedor">
+        <img src="imgs/arquitectura/arsene-m-ovrejorde-BovGw4div6U-unsplash.jpg" alt="Edificio extraño">
+
+        <p class="absolute titulo">Edificio extraño fotografiado durante la puesta de Sol</p>
+
+        <p class="absolute autor">&copy; Carlos Design Solutions</p>
+    </div>
+</body>
+
+</html>
