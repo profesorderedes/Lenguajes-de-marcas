@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 45</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contenedor {
+            max-width: 960px;
+            margin: auto;
+        }
+
+        h1 {
+            font-family: 'Dancing Script';
+            text-align: center;
+            font-size: 5rem;
+            margin: 30px;
+        }
+
+        h2 {
+            font-family: 'Spectral';
+            font-variant: small-caps;
+        }
+
+        p {
+            font-family: 'Poppins';
+            text-align: justify;
+        }
+
+        .col_izquierda {
+            margin-top: 20px;
+            width: 50%;
+            float: left;
+            padding: 20px 20px 20px 0;
+        }
+
+        .col_derecha {
+            margin-top: 20px;
+            width: 50%;
+            float: left;
+            padding: 20px 0 20px 20px;
+        }
+
+        .separador {
+            border-right: 1px solid black;
+        }
+
+        .imagen_grande {
+            float: left;
+            width: 350px;
+            padding: 5px 10px 10px 0;
+        }
+
+        .imagen_pequenya {
+            width: 250px;
+            display: block;
+            margin: auto;
+            padding: 10px 0;
+        }
+
+        .notaAlPie {
+            clear: both;
+            text-align: center;
+            margin: auto;
+            padding: 20px 0;
+            font-size: 0.85rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <h1>La gaceta de la tarde</h1>
+
+        <h2>Sanidad permitirá vacunar con AstraZeneca a los mayores de 65 solo si
+            son trabajadores esenciales</h2>
+
+        <img class="imagen_grande" src="imgs/astrazeneca.jpg" alt="Vacuna">
+
+        <p>
+            La comisión de Sanidad Pública también ha acordado que el fármaco de Janssen
+            se utilice para incrementar "el ritmo de vacunación" en los grupos de mayor
+            edad.
+        </p>
+
+        <p>
+            El Ministerio de Sanidad ha decidido eliminar el límite de edad para
+            administrar la vacuna de AstraZeneca a las personas incluidas en los grupos
+            esenciales y permitirá aplicarla a mayores de 65 años. La decisión se ha tomado
+            en una reunión de la comisión de Sanidad Pública celebrada este martes, según
+            fuentes conocedoras del contenido de la reunión. Esta vacuna estuvo limitada
+            anteriormente en España a personas menores de 55 años. Posteriormente, se
+            amplió el grupo de edad hasta los 65. La Organización Mundial de la Salud
+            recomendó utilizarla para todos los grupos de población. El fármaco de Janssen
+            se utilizará para “incrementar el ritmo de vacunación de los grupos de mayor
+            edad”.
+        </p>
+
+        <div class="col_izquierda separador">
+            <h2>Varios estados de Alemania paralizan la vacunación con el fármaco
+                anglosueco
+            </h2>
+
+            <p>El comité de vacunación recomienda el preparado solo para los mayores de 60 años.</p>
+            <img class="imagen_pequenya" src="imgs/vacunacion.jpg" alt="Vacunación pública">
+
+            <p>
+                Tres estados federados alemanes, Berlín, Brandenburgo y Renania del Norte-
+                Westfalia, y la ciudad de Múnich, en Baviera, han anunciado que paralizan la
+                vacunación de menores de 60 años con el preparado de AstraZeneca.
+                Responsables de estos territorios han asegurado que no pondrán más vacunas
+                de esta compañía tras conocerse que en el país se han registrado 31 casos de
+                trombosis —de los cuales nueve resultaron en fallecimiento— en personas que
+                habían sido vacunadas con AstraZeneca poco antes. La canciller alemana,
+                Angela Merkel, abordará esta noche con los poderes regionales la situación en
+                torno a esta vacuna.
+            </p>
+
+        </div>
+
+        <div class="col_derecha">
+            <h2>El primer cometa interestelar está hecho del material más antiguo conocido</h2>
+
+            <p>Dos estudios afirman que El Borisov es un vestigio de hace 4.500 millones de años</p>
+
+            <img class="imagen_pequenya" src="imgs/cometa.jpg" alt="Cometa">
+
+            <p>
+                En verano de 2019 llegó a nuestro sistema solar un objeto desconocido
+                procedente de una estrella sin identificar. Era el primer cometa interestelar
+                que se había observado hasta el momento. Nadie sabía de qué estaba hecho ni
+                cuánto tiempo había viajado por el espacio interestelar hasta pasar como una
+                exhalación por el cielo terrestre. Gennady Borisov, un astrónomo aficionado de
+                Ucrania, fue el primero en obsevarlo.
+            </p>
+        </div>
+
+
+        <p class="notaAlPie">&copy; La gaceta de la tarde. Todos los derechos reservados</p>
+
+    </div>
+</body>
+
+</html>
