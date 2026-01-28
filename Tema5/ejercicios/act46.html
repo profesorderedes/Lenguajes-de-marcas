@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 46</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(8, 1, 29);
+        }
+
+        #contenedor {
+            width: 80%;
+            margin: auto;
+            /* height: 200px; */
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .barra_menu {
+            overflow: auto;
+            border-top: 1px white solid;
+            border-bottom: 1px white solid;
+            margin: auto;
+        }
+
+        #menu_izquierdo {
+            color: white;
+        }
+
+        #menu_izquierdo li {
+            float: left;
+            margin: 20px;
+            list-style: none;
+        }
+
+        #menu_izquierdo li:hover {
+            /* text-decoration: underline; */
+
+        }
+
+        #buscar {
+            color: greenyellow;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="contenedor">
+
+        <h1>Barra de menú de Xataka</h1>
+
+        <div class="barra_menu">
+            <ul id="menu_izquierdo">
+                <li id="buscar"><a href="#">BUSCAR</a></li>
+                <li><a href="#">ANÁLISIS</a></li>
+                <li><a href="#">XATAKA SELECCIÓN</a></li>
+                <li><a href="#">MÓVILES</a></li>
+                <li><a href="#">CIENCIA</a></li>
+                <li><a href="#">PRO</a></li>
+                <li><a href="#">NEWSLETTER</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
