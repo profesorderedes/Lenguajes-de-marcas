@@ -33,6 +33,25 @@
 
         img {
             width: 90px;
+            float: left;
+        }
+
+        /* USANDO COMBINADORES */
+
+        #bloque1>.caja {
+            background-color: crimson;
+        }
+
+        #bloque2 .caja {
+            background-color: palegreen;
+        }
+
+        #bloque3 img~.caja {
+            background-color: salmon;
+        }
+
+        #bloque4 img+.caja {
+            background-color: #a27107;
         }
     </style>
 
@@ -44,67 +63,62 @@
 
     <p>(Bloque 1) Selecciona todos los elementos de clase caja que son hijos de bloque1.</p>
 
-    <div id="bloque1">
+    <div id="bloque1" class="rectangulo">
+
+        <div class="caja">
+            <p>Caja 1</p>
+        </div>
+
+        <div class="caja">
+            <p>Caja 2</p>
+        </div>
 
         <div class="rectangulo">
 
             <div class="caja">
-                <p>Caja 1</p>
+                <p>Caja3</p>
+            </div>
+
+            <img src="imgs/hamsters/w150px/hamster01.png" alt="lol">
+
+            <div class="caja">
+                <p>Caja 4</p>
             </div>
 
             <div class="caja">
-                <p>Caja 2</p>
-            </div>
-
-            <div class="rectangulo">
-
-                <div class="caja">
-                    <p>Caja3</p>
-                </div>
-
-                <div><img src="imgs/hamsters/w150px/hamster01.png" alt="lol"></div>
-
-                <div class="caja">
-                    <p>Caja 4</p>
-                </div>
-
-                <div class="caja">
-                    <p>Caja 5</p>
-                </div>
+                <p>Caja 5</p>
             </div>
         </div>
+
 
     </div>
 
     <p>(Bloque 2) Selecciona todos los elementos de clase caja que son descendientes de bloque2.</p>
 
-    <div id="bloque2">
+    <div id="bloque2" class="rectangulo">
+
+        <div class="caja">
+            <p>Caja 1</p>
+        </div>
+
+        <div class="caja">
+            <p>Caja 2</p>
+        </div>
 
         <div class="rectangulo">
 
             <div class="caja">
-                <p>Caja 1</p>
+                <p>Caja3</p>
+            </div>
+
+            <img src="imgs/hamsters/w150px/hamster01.png" alt="lol">
+
+            <div class="caja">
+                <p>Caja 4</p>
             </div>
 
             <div class="caja">
-                <p>Caja 2</p>
-            </div>
-
-            <div class="rectangulo">
-
-                <div class="caja">
-                    <p>Caja3</p>
-                </div>
-
-                <div><img src="imgs/hamsters/w150px/hamster01.png" alt="lol"></div>
-
-                <div class="caja">
-                    <p>Caja 4</p>
-                </div>
-
-                <div class="caja">
-                    <p>Caja 5</p>
-                </div>
+                <p>Caja 5</p>
             </div>
         </div>
 
@@ -112,33 +126,30 @@
 
     <p>(Bloque 3) Selecciona todos los hermanos adyacentes a una imagen, dentro de bloque3.</p>
 
-    <div id="bloque3">
+    <div id="bloque3" class="rectangulo">
+
+        <div class="caja">
+            <p>Caja 1</p>
+        </div>
+
+        <div class="caja">
+            <p>Caja 2</p>
+        </div>
 
         <div class="rectangulo">
 
             <div class="caja">
-                <p>Caja 1</p>
+                <p>Caja3</p>
+            </div>
+
+            <img src="imgs/hamsters/w150px/hamster01.png" alt="lol">
+
+            <div class="caja">
+                <p>Caja 4</p>
             </div>
 
             <div class="caja">
-                <p>Caja 2</p>
-            </div>
-
-            <div class="rectangulo">
-
-                <div class="caja">
-                    <p>Caja3</p>
-                </div>
-
-                <div><img src="imgs/hamsters/w150px/hamster01.png" alt="lol"></div>
-
-                <div class="caja">
-                    <p>Caja 4</p>
-                </div>
-
-                <div class="caja">
-                    <p>Caja 5</p>
-                </div>
+                <p>Caja 5</p>
             </div>
         </div>
 
@@ -147,33 +158,30 @@
     <p>(Bloque 4) Selecciona el elemento de clase caja situado inmediatamente a continuación de
         una imagen, dentro de bloque4.</p>
 
-    <div id="bloque4">
+    <div id="bloque4" class="rectangulo">
+
+        <div class="caja">
+            <p>Caja 1</p>
+        </div>
+
+        <div class="caja">
+            <p>Caja 2</p>
+        </div>
 
         <div class="rectangulo">
 
             <div class="caja">
-                <p>Caja 1</p>
+                <p>Caja3</p>
+            </div>
+
+            <img src="imgs/hamsters/w150px/hamster01.png" alt="lol">
+
+            <div class="caja">
+                <p>Caja 4</p>
             </div>
 
             <div class="caja">
-                <p>Caja 2</p>
-            </div>
-
-            <div class="rectangulo">
-
-                <div class="caja">
-                    <p>Caja3</p>
-                </div>
-
-                <div><img src="imgs/hamsters/w150px/hamster01.png" alt="lol"></div>
-
-                <div class="caja">
-                    <p>Caja 4</p>
-                </div>
-
-                <div class="caja">
-                    <p>Caja 5</p>
-                </div>
+                <p>Caja 5</p>
             </div>
         </div>
 
