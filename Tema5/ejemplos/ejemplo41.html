@@ -5,22 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo 41</title>
+    <style>
+        .contenedor {
+            border: 1px solid black;
+            max-width: 40%;
+            margin: auto;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+
+        .caja {
+            width: 100px;
+            /* height: 100px; */
+            border: 1px solid black;
+        }
+
+        .roja {
+            background-color: #fb9c79;
+        }
+
+        .verde {
+            background-color: lightgreen;
+            padding-top: 10px;
+        }
+
+        .amarilla {
+            background-color: lightyellow;
+        }
+
+        .azul {
+            background-color: lightblue;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Flexbox</h1>
 
     <div class="contenedor">
-        <div class="caja">A</div>
-        <div class="caja">B</div>
-        <div class="caja">C</div>
-        <div class="caja">D</div>
-        <div class="caja">E</div>
-        <div class="caja">F</div>
-        <div class="caja">G</div>
-        <div class="caja">H</div>
-        <div class="caja">I</div>
-        <div class="caja">J</div>
+        <div class="caja roja">A</div>
+        <div class="caja verde">B</div>
+        <div class="caja amarilla">C</div>
+        <div class="caja azul">D</div>
+        <div class="caja azul">E</div>
+        <div class="caja azul">F</div>
+        <div class="caja azul">G</div>
+        <div class="caja azul">H</div>
+
+        <!-- <div class="caja azul">I</div>
+        <div class="caja azul">J</div> -->
     </div>
 </body>
 
