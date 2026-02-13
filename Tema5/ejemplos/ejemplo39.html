@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 39</title>
+    <style>
+        label,
+        input {
+            display: block;
+        }
+
+        input {
+            margin-bottom: 1rem;
+        }
+
+        input[type="text"]:focus {
+            background-color: yellow;
+            outline: 1px solid blue;
+            border: 1px solid blue;
+            border-radius: 3px;
+        }
+
+        input:nth-child(2) {
+            color: red;
+        }
+
+        input[type="checkbox"] {
+            display: inline;
+        }
+
+        input[type="checkbox"]+label {
+            display: inline;
+        }
+
+        input[type="checkbox"]:checked+label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudoclases (:)</h1>
+
+    <h2>:focus</h2>
+    <form action="">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos">
+
+
+        <input type="checkbox" name="terminos" id="terminos">
+        <label for="terminos">Conforme los términos de uso</label>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>

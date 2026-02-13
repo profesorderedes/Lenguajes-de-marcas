@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 40</title>
+    <style>
+        .texto::first-line {
+            font-size: 1.2rem;
+        }
+
+        .texto::first-letter {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2rem;
+        }
+
+        .texto::selection {
+            background-color: crimson;
+            color: whitesmoke;
+        }
+
+        li::marker {
+            color: crimson;
+        }
+
+        label,
+        input {
+            display: block;
+        }
+
+        input {
+            margin-bottom: 1rem;
+        }
+
+        input::placeholder{
+            color: green;
+            font-size: 0.6rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudoelementos (::)</h1>
+
+    <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, iste. Voluptatum eum illo
+        voluptas, inventore
+        alias sed repellat fuga optio asperiores laudantium itaque sint quisquam dolore iusto, cum ut mollitia velit in
+        a. Sint quasi accusamus, cumque cum architecto amet.</p>
+
+    <p>Lista de la compra</p>
+    <ul>
+        <li>Leche semidesnatada</li>
+        <li>Patatas</li>
+        <li>Tomates</li>
+    </ul>
+
+    <form action="">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Tu nombre...">
+
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos" placeholder="Tus apellidos...">
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
