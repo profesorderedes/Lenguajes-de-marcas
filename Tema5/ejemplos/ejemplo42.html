@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 42</title>
+    <style>
+        .contenedor{
+            border: 1px solid crimson;
+            display: flex;
+            height: 100px;
+            align-items: flex-start;
+        }
+
+        .texto{
+            border: 1px solid black;
+            background-color: lightcyan;
+            /* flex-grow: 1; */
+            /* flex-shrink: 0; */
+            /* flex-basis: 4rem; */
+            height: 50px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100%;
+        }
+
+        .largo{
+            /* flex-grow: 5; */
+        }
+
+        .separado{
+            align-self: flex-end;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+
+    <div class="contenedor">
+        <div class="texto largo" style="order: 3;">Inicio</div>
+        <div class="texto separado" style="order: 2;">Contacto</div>
+        <div class="texto" style="order: 1;">Acerca de esta app web</div>
+    </div>
+</body>
+</html>
