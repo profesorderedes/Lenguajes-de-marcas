@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 1</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>Hola mundo...</h1>
+
+
+    <script>
+        "use strict"
+
+        let nombre = "Carlos";
+        let edad = 30;
+        let numEnorme = 9237491723946667n;
+        let autorizado = false;
+
+        let x;
+        console.log(x);
+
+        // Objetos
+
+        const coche = {
+            matricula: "1234ABC",
+            marca: "Volkswagen",
+            modelo: "Golf"
+        };
+
+        console.log(coche);
+
+        console.log('Matrícula del coche: ' + coche.matricula);
+        console.log('Modelo: ' + coche.marca + ' ' + coche.modelo);
+
+        console.log('Matrícula del coche: ' + coche['matricula']);
+
+        let ordenador = {
+            procesador: 'Intel i7',
+            ram: '32 GB',
+            marca: 'HP',
+
+            mostrar: function () {
+                console.log(this.marca + ' con procesador ' + this.procesador + ' y ' + this.ram + ' de RAM.');
+            },
+            getProcesador: function () {
+                return this.procesador;
+            },
+            setProcesador: function (procesador) {
+                this.procesador = procesador;
+            }
+        }
+
+        ordenador.setProcesador('Intel i9');
+        ordenador.mostrar();
+        console.log("Procesador: " + ordenador.getProcesador());
+
+        // Arrays
+
+        let colores = ['Rojo', 'Ámbar', "Verde"];
+        let nombres = [];
+
+        console.log('Color: ' + colores[0]);
+
+        // Operadores aritméticos
+
+        console.log('10 elevado a 5: ' + (10 ** 5));
+
+        // Operadores de comparación
+
+        let a = 10;
+        let b = '10';
+
+        console.log(a == b);
+        console.log(a === b);
+
+        console.log(a != b);
+        console.log(a !== b);
+
+        let palabra1 = 'coche';
+        let palabra2 = 'mesa';
+
+        console.log(palabra1 < palabra2);
+
+        // Funciones
+
+        function cuadrado(num) {
+            return num ** 2;
+        }
+
+        console.log(cuadrado(5));
+
+        // Bucles 
+
+        let num = 8;
+        console.log('Tabla del ' + num)
+        for (let i = 1; i <= 10; i++) {
+            console.log(num + ' x ' + i + ' = ' + num * i);
+        }
+
+        let libro = {
+            titulo: 'La tabla de Flandes',
+            autor: 'Arturo Pérez-Reverte',
+            precio: 15
+        }
+
+        for (let atributo in libro) {
+            console.log(atributo + ' = ' + libro[atributo]);
+        }
+
+        let asistentes = ['Carlos', 'Óliver', 'Uriel'];
+
+        for (let i = 0; i < asistentes.length; i++) {
+            console.log(asistentes[i]);
+        }
+
+        for (let asistente of asistentes) {
+            console.log(asistente);
+        }
+
+    </script>
+</body>
+
+</html>
