@@ -15,12 +15,9 @@
 
         let nota = Number(prompt('Escribe tu nota:'));
 
-        if(nota < 0 || nota > 10){
+        if (nota < 0 || nota > 10) {
             console.log('La nota no es válida');
-            return;
-        }
-
-        if (nota < 5) {
+        } else if (nota < 5) {
             console.log('Insuficiente');
         } else if (nota < 6) {
             console.log('Suficiente');

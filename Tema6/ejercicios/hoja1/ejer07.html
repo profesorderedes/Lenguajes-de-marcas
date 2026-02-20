@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 07</title>
+</head>
+
+<body>
+    <h1>7.- Crea un programa para saber si un número (pedido previamente), es impar o par. Hay que poder
+        pedir tantos números como el usuario desee
+    </h1>
+
+    <script>
+        "use strict"
+
+        // let max = Number(prompt("¿Cuántos números quieres introducir?"));
+
+        // for (let i = 0; i < max; i++) {
+        //     let num = Number(prompt("Dame un número"));
+
+        //     if (num % 2 == 0) {
+        //         console.log("Par");
+
+        //     } else {
+        //         console.log("Impar");
+        //     }
+        // }
+
+        let num;
+        do {
+
+            num = Number(prompt("Dame un número"));
+
+            if (num % 2 == 0) {
+                console.log("Par");
+
+            } else {
+                console.log("Impar");
+            }
+
+        } while (num != -1);
+
+    </script>
+</body>
+
+</html>
