@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+
+<body>
+    <h1>Ejercicio 6</h1>
+
+    <script>
+        'use strict'
+
+        let nota = Number(prompt('Escribe tu nota:'));
+
+        if(nota < 0 || nota > 10){
+            console.log('La nota no es válida');
+            return;
+        }
+
+        if (nota < 5) {
+            console.log('Insuficiente');
+        } else if (nota < 6) {
+            console.log('Suficiente');
+        } else if (nota < 7) {
+            console.log('Bien');
+        } else if (nota < 9) {
+            console.log('Notable');
+        } else if (nota <= 10) {
+            console.log('Excelente');
+        }
+
+    </script>
+</body>
+
+</html>
