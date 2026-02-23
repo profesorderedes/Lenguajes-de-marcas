@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title>
+</head>
+
+<body>
+    <h1>12.- Escribe un programa que calcule el factorial de un número. El programa debe permitir calcular
+        el factorial de todos los números que el usuario desee
+    </h1>
+
+    <script>
+        "use strict"
+
+        let num = Number(prompt("Introduce un número y te dare su factorial"));
+
+
+        let factorial = 1;
+
+        for (let i = 2; i <= num; i++) {
+            factorial *= i;
+        }
+
+        console.log(factorial);
+
+
+    </script>
+
+</body>
+
+</html>

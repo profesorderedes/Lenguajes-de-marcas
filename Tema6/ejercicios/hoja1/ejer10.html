@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+
+<body>
+    <h1>10.- Escribe un programa que solicite tres números e imprima en la consola el número más
+        pequeño
+    </h1>
+
+    <script>
+        "use strict"
+
+        let numeros = [];
+
+        for (let i = 0; i < 3; i++) {
+            numeros[i] = Number(prompt("Introduce un número:"))
+        }
+
+        let posMin = 0;
+        for(let i = 1; i < numeros.length; i++){
+            if(numeros[i]<numeros[posMin]){
+                posMin = i;
+            }
+        }
+        
+        console.log("Menor: " + numeros[posMin]);
+
+    </script>
+</body>
+
+</html>
