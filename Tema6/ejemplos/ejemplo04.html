@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 4</title>
+</head>
+<body>
+    <h1>Acceso al DOM</h1>
+
+    <p id="parrafo">Podemos modificar un texto desde JavaScript.</p>
+
+    <script>
+        'use strict'
+
+        let parrafo = document.getElementById('parrafo');
+
+        parrafo.innerHTML = 'Este texto lo ha escrito <b>JavaScript</b>.';
+
+    </script>
+</body>
+</html>

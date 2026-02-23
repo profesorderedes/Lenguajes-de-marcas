@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 5</title>
+</head>
+
+<body>
+    <h1>Acceso al DOM</h1>
+
+    <p class="texto">Podemos modificar un texto desde JavaScript.</p>
+
+    <div class="texto">Otro texto con la clase 'texto'</div>
+    <script>
+        'use strict'
+
+        let textos = document.getElementsByClassName('texto');
+        console.log(textos);
+
+        textos[0].innerHTML = 'MODIFICADO POR JAVASCRIPT';
+        textos[1].innerHTML = 'TAMBIÉN MODIFICADO POR JAVASCRIPT';
+
+    </script>
+</body>
+
+</html>
