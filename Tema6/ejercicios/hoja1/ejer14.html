@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+</head>
+
+<body>
+    <h1>
+        14.- Crea un programa que guarde dentro de un array los doce meses del año y después escriba
+        estos meses en la consola.
+    </h1>
+
+    <ul id="meses"></ul>
+
+    <script>
+        "use strict"
+
+        let meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+
+        let docMeses = document.getElementById('meses');
+
+        for (let i = 0; i < meses.length; i++) {
+            docMeses.innerHTML = docMeses.innerHTML + '<li>' + meses[i] + '</li>';
+        }
+
+    </script>
+
+</body>
+
+</html>

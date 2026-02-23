@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejer 13</title>
+</head>
+
+<body>
+    <h1>
+        13.- Escribe un programa que solicite los datos necesarios y
+        después calcule el área de un triángulo.
+    </h1>
+
+    <p></p>
+
+    <script>
+        'use strict'
+
+        let b = prompt('Indica la base del triángulo en cm');
+        let a = prompt('Indica la altura del triángulo en cm');
+
+        let parrafos = document.getElementsByTagName('p');
+        parrafos[0].innerHTML = 'El triángulo de base ' + b + ' cm y altura ' + a + ' cm tiene un área de ' + (b * a / 2) + ' cm<sup>2</sup>.';
+
+    </script>
+</body>
+
+</html>
