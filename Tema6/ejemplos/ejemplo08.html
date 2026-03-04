@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 8</title>
+</head>
+
+<body>
+    <h1>Cambiar atributo de un elemento</h1>
+
+    <img id="planeta" src="imgs/planetas/saturno.png" alt="Saturno">
+
+    <script>
+        'use strict'
+
+        let imagen = document.querySelector('#planeta');
+
+        imagen.src = 'imgs/planetas/marte.jpg';
+        imagen.alt = 'Marte';
+
+    </script>
+</body>
+
+</html>

@@ -8,11 +8,29 @@
 <body>
     <h1>Acceso al DOM</h1>
 
-    
+    <p class="texto">Párrafo 1</p>
+
+    <p class="texto">Párrafo 2</p>
+
+    <p class="texto">Párrafo 3</p>
+
+    <p>Párrafo 4</p>
+
+    <div class="texto">Texto 5 dentro de div</div>
 
     <script>
         'use strict'
 
+        let primerParrafo = document.querySelector('p');
+        primerParrafo.innerHTML = "Texto modificado por JavaScript";
+
+        /* let todosLosParrafos = document.querySelectorAll('p');
+        todosLosParrafos[1].innerHTML = "Texto modificado usando querySelectorAll"; */
+
+        let parrafosClaseTexto = document.querySelectorAll('.texto');
+        for(let parrafo of parrafosClaseTexto){
+            parrafo.innerHTML = 'Texto modificado usando querySelectorAll con "p.texto"';
+        }
 
     </script>
 </body>

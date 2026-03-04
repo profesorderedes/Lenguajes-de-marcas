@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 9</title>
+</head>
+<body>
+    <h1>Modificar estilos con JavaScript</h1>
+
+    <p class="texto">Se puede modificar cualquier estilo de cualquier elemento usando la propiedad style.</p>
+
+    <script>
+        'use strict'
+
+        document.querySelector('p.texto').style.color = 'blue';
+        // CSS: background-color  JavaScript: backgroundColor
+        document.querySelector('p.texto').style.backgroundColor = 'yellow';
+
+        // CSS: font-size  JavaScript: fontSize
+        // CSS: font-family  JavaScript: fontFamily
+
+    </script>
+</body>
+</html>

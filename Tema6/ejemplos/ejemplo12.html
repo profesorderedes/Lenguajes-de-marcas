@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 12</title>
+</head>
+
+<body>
+    <h1>Evento click</h1>
+
+    <button onclick="mostrarMensaje(this)">Púlsame</button>
+
+    <p class="mensaje"></p>
+
+    <script>
+        'use strict'
+
+        function mostrarMensaje(componente) {
+            document.querySelector('p.mensaje').innerHTML = 'Has pulsado el botón';
+            componente.innerHTML = 'Me has pulsado';
+        }
+    </script>
+</body>
+
+</html>
