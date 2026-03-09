@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 13</title>
+</head>
+
+<body>
+    <h1>Evento click</h1>
+
+    <button>Púlsame</button>
+
+    <p class="mensaje"></p>
+
+    <script>
+        'use strict'
+
+        document.querySelector('button').addEventListener('click', function(){mostrarMensaje(this)});
+
+        function mostrarMensaje(boton) {
+            document.querySelector('p.mensaje').innerHTML = 'Has pulsado el botón';
+            boton.innerHTML = 'Me has pulsado';
+        }
+    </script>
+</body>
+
+</html>
