@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+
+    <style>
+        .formato {
+            text-align: center;
+            width: 600px;
+            margin: auto;
+            font-size: 1.2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: salmon;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aplicar una clase a un elemento</h1>
+
+
+    <p>Haz clic en el siguiente parrafo para centrarlo y cambiarle la fuente: </p>
+
+    <p id="activo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nihil, enim nam natus accusantium
+        earum inventore, quas amet exercitationem quae velit nulla, doloremque cum a temporibus odit at illum aliquam
+        perferendis ipsa. Iure sit velit facilis laudantium beatae obcaecati unde?</p>
+
+    <script>
+
+        'use strict'
+
+        let pActivo = document.getElementById("activo");
+
+        pActivo.addEventListener("mouseover", cambiarFormato);
+
+        function cambiarFormato() {
+            pActivo.classList.add("formato");
+        }
+
+        pActivo.addEventListener("mouseout", quitarFormato);
+
+        function quitarFormato() {
+            pActivo.classList.remove("formato");
+        }
+
+    </script>
+
+
+</body>
+
+</html>

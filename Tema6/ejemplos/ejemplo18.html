@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 18</title>
+    <style>
+        label,
+        input {
+            display: block;
+        }
+
+        input {
+            margin-bottom: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Eventos de foco</h1>
+
+    <form action="">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script>
+        'use strict'
+
+        let nombre = document.querySelector('#nombre');
+
+        nombre.addEventListener('input', mayusculas);
+        nombre.addEventListener('change', mensaje);
+
+        function mayusculas(){
+            nombre.value = nombre.value.toUpperCase();
+        }
+
+        function mensaje(){
+            console.log('Nombre: ' + nombre.value);
+        }
+        
+    </script>
+</body>
+
+</html>

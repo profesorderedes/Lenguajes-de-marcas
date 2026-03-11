@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 04</title>
+
+    <style>
+        #colorBlock {
+            border: 1px solid black;
+            width: 10rem;
+            height: 5rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Seleccionar un color</h1>
+    <p>Elije un color, y se aplicará al rectángulo de abajo: </p>
+
+    <form action="">
+        <select name="color" id="color">
+            <option value="green">Verde</option>
+            <option value="purple">Púrpura</option>
+            <option value="yellow">Amarillo</option>
+            <option value="red">Rojo</option>
+            <option value="blue">Azul</option>
+        </select>
+    </form>
+
+    <p>Color elegido:</p>
+
+    <div id="colorBlock"></div>
+
+    <script>
+        "use strict"
+
+        let list = document.querySelector("#color");
+        let block = document.querySelector("#colorBlock")
+
+        list.addEventListener("change", changeColor);
+        window.addEventListener("load", resetValue);
+
+        function changeColor() {
+            let color = list.value;
+            block.style.backgroundColor = color;
+        }
+
+        function resetValue() {
+            list.value = "green";
+            block.style.backgroundColor = "green";
+        }
+
+    </script>
+
+
+</body>
+
+</html>
