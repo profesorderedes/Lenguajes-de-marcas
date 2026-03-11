@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 02</title>
+
+    <style>
+        h1 {
+            font-size: 2.2rem;
+        }
+
+        p {
+            font-size: 1.25rem;
+        }
+
+        button {
+            width: 12rem;
+            height: 4rem;
+            font-size: 1.5rem;
+        }
+
+        #wikipedia {
+            background-color: #93B5FF;
+            border: 1px solid #769ef3;
+        }
+
+        #greenpeace {
+            background-color: #B5FF9C;
+            border: 1px solid #86f661;
+        }
+
+
+        #cruzRoja {
+            background-color: #FFADA1;
+            border: 1px solid #f68d7d;
+        }
+
+        a{
+            display: inline-block;
+            padding: 1.5rem 4rem;
+            background-color: #FFFF9E;
+            border: 1px solid #e4e48d;
+            text-decoration: none;
+            color: black;
+            font-size: 1.5rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Elegir destino del enlace</h1>
+
+    <p>Pulsa uno de estos tres colores para elegir el destino del link que aparece más abajo.</p>
+
+    <button id="wikipedia">Wikipedia</button>
+    <button id="greenpeace">Greenpeace</button>
+    <button id="cruzRoja">Cruz Roja</button>
+
+    <p>Pulsa el siguiente link para dirigirte a la web elegida:</p>
+
+    <a id="aEnlace" href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="_blank">
+        Ir a Wikipedia
+    </a>
+
+    <script>
+        "use strict"
+
+        let btnWikipedia = document.getElementById("wikipedia");
+        let btnGreenpeace = document.getElementById("greenpeace");
+        let btnCruzRoja = document.getElementById("cruzRoja");
+        let aEnlace = document.getElementById("aEnlace");
+
+        btnWikipedia.addEventListener("click", function () { cambiarLink(aEnlace, "Wikipedia", "https://es.wikipedia.org/wiki/Wikipedia:Portada") });
+
+        btnGreenpeace.addEventListener("click", function () { cambiarLink(aEnlace, "Greenpeace", "https://es.greenpeace.org/es/") });
+        
+        btnCruzRoja.addEventListener("click", function () { cambiarLink(aEnlace, "Cruz Roja", "https://www2.cruzroja.es/") });
+
+        function cambiarLink(elemento, texto, destino) {
+            elemento.innerHTML = "Ir a " + texto;
+            elemento.href = destino;
+        }
+
+    </script>
+</body>
+
+</html>
