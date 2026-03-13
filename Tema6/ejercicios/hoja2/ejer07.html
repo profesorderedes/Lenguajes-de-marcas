@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejer 7</title>
+    <style>
+        input[type=range]{
+            display: block;
+        }
+        img {
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Control de transparencia</h1>
+
+    <p>Mueve el deslizador para cambiar la transparencia de la foto.</p>
+
+
+    <input type="range" name="slider" id="slider" min="0" max="100" value="100">
+
+
+    <img id="foto" src="imgs/arquitectura/dil-5OOfwgaiUN8-unsplash.jpg" alt="Dil">
+
+    <script>
+        'use strict'
+
+        let imagen = document.getElementById('foto');
+        document.getElementById('slider').addEventListener('input', function () { cambiarTransparencia(this) });
+
+        function cambiarTransparencia(elemento) {
+            imagen.style.opacity = elemento.value / 100;
+        }
+    </script>
+</body>
+
+</html>
