@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 20</title>
+    <style>
+        #contenedor {
+            background-color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Insertar elemento antes de otro en el DOM</h1>
+
+    <div id="contenedor">
+        <p id="ultimoParrafo">Este párrafo está al final del div contenedor.</p>
+    </div>
+
+    <button id="boton">Añadir nuevo párrafo</button>
+
+    <script>
+        'use strict'
+
+        document.querySelector('#boton').addEventListener('click', anyadirParrafo);
+
+        let contenedor = document.querySelector('#contenedor');
+        let ultimoParrafo = document.querySelector('#ultimoParrafo');
+
+        function anyadirParrafo() {
+            let nuevoParrafo = document.createElement('p');
+            nuevoParrafo.innerHTML = 'Nuevo párrafo hecho con JavaScript';
+
+            contenedor.insertBefore(nuevoParrafo, ultimoParrafo);
+        }
+    </script>
+</body>
+
+</html>

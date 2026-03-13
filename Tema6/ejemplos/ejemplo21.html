@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 21</title>
+</head>
+
+<body>
+    <h1>Eliminar un elemento del DOM</h1>
+
+    <div id="contenedor">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, sequi.</p>
+        <img src="imgs/arte/La gran ola de Kanagawa - Katsushika Hokusai.jpg" alt="La gran ola de Kanagawa">
+    </div>
+
+    <button>Eliminar el contenedor superior</button>
+
+    <script>
+        'use strict'
+
+        document.querySelector('button').addEventListener('click', eliminarContenedor);
+
+        function eliminarContenedor(){
+            document.querySelector('#contenedor').remove();
+        }
+    </script>
+</body>
+
+</html>

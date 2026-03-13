@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 19</title>
+    <style>
+        #contenidoExtra {
+            background-color: palegreen;
+        }
+
+        #imagenesExtra {
+            background-color: lightsalmon;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Agregar y eliminar elementos del DOM</h1>
+
+    <button id="anyadir">Añadir párrafo</button>
+
+    <div id="contenidoExtra">
+
+        <p>Contenido dentro del div creado con HTML</p>
+
+    </div>
+
+    <button id="anyadirFoto">Añadir fotografía</button>
+
+    <div id="imagenesExtra">
+        <p>Imágenes nuevas:</p>
+
+
+    </div>
+
+    <script>
+        'use strict'
+
+        let boton = document.querySelector('#anyadir');
+        boton.addEventListener('click', anyadirParrafo);
+
+        let boton2 = document.querySelector('#anyadirFoto');
+        boton2.addEventListener('click', anyadirFoto);
+
+        function anyadirParrafo() {
+
+            let parrafoNuevo = document.createElement('p');
+            parrafoNuevo.innerHTML = 'Nuevo párrafo escrito desde JavaScript';
+
+            let divInsertar = document.querySelector('#contenidoExtra');
+
+            divInsertar.appendChild(parrafoNuevo);
+
+        }
+
+        function anyadirFoto() {
+
+            let imagenNueva = document.createElement('img');
+            imagenNueva.src = 'imgs/flores/clavel.jpg';
+            imagenNueva.alt = 'Clavel';
+
+            let divFoto = document.querySelector('#imagenesExtra');
+
+            divFoto.appendChild(imagenNueva);
+
+        }
+    </script>
+</body>
+
+</html>
