@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 05</title>
+
+    <style>
+        .rectangulo {
+            display: flex;
+            gap: 4px;
+            justify-content: space-evenly;
+
+            padding: 3px;
+            max-width: max-content;
+
+            border: 3px solid palegreen;
+            border-radius: 5px;
+        }
+
+        .cuadrado {
+            height: 75px;
+            width: 75px;
+            margin: 1px;
+
+            border-radius: 4px;
+            border: none;
+        }
+
+        .cuadrado:hover {
+            cursor: pointer;
+        }
+
+        #rojo {
+            background-color: red;
+        }
+
+        #verde {
+            background-color: green;
+        }
+
+        #azul {
+            background-color: blue;
+        }
+
+        #amarillo {
+            background-color: yellow;
+        }
+
+        #naranja {
+            background-color: orange;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Ocultar divs</h1>
+
+    <p>Haz clic en los siguientes cuadrados para hacerlos desaparecer</p>
+
+    <div class="rectangulo">
+        <div class="cuadrado" id="rojo"></div>
+        <div class="cuadrado" id="verde"></div>
+        <div class="cuadrado" id="azul"></div>
+        <div class="cuadrado" id="amarillo"></div>
+        <div class="cuadrado" id="naranja"></div>
+    </div>
+
+    <script>
+
+        "use strict"
+
+        let botones = document.getElementsByClassName("cuadrado");
+
+        for (let boton of botones) {
+            boton.addEventListener("click", function () { eliminar(this) })
+        }
+
+        function eliminar(elemento) {
+            elemento.style.display = 'none';
+        }
+
+    </script>
+</body>
+
+</html>

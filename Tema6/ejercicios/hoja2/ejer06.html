@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 06</title>
+
+    <style>
+        #foto {
+            border: 3px solid black;
+            border-radius: 4px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Galeria</h1>
+
+    <p>Pulsa sobre la imagen y el color del borde cambiará aleatoriamente.</p>
+
+    <img id="foto" src="imgs/hamsters/w150px/hamster01.png" alt="hamster">
+
+    <script>
+        "use strict"
+
+        document.getElementById("foto").addEventListener("click", function () { cambiarColorBorde(this) });
+
+        function cambiarColorBorde(elemento) {
+            let r = Math.floor((Math.random() * 255) + 1);
+            let g = Math.floor((Math.random() * 255) + 1);
+            let b = Math.floor((Math.random() * 255) + 1);
+
+            elemento.style.border = "3px solid rgb(" + r + ", " + g + ", " + b + ")";
+        }
+
+    </script>
+
+</body>
+
+</html>
