@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 08</title>
+
+    <style>
+        button {
+            display: inline-block;
+            width: 150px;
+        }
+
+        select {
+            display: block;
+            width: 300px;
+            height: 200px;
+            margin-top: 10px;
+            overflow-y: scroll;
+        }
+
+        input {
+            width: 175px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Añadir elementos a un select</h1>
+    <p>Escribe un hobby que tengas.</p>
+
+    <input type="text" name="hobby" id="hobby">
+    <button id="anyadir">Añadir</button>
+    <select name="listaHobbies" id="listaHobbies" size="2">
+        <option id="placeholder" disabled>(Aún no has puesto ninguno)</option>
+    </select>
+
+    <script>
+        "use script"
+
+        let input = document.getElementById("hobby");
+        let lista = document.getElementById("listaHobbies");
+        document.getElementById("anyadir").addEventListener("click", anyadirHobby);
+
+        function anyadirHobby() {
+
+            if (input.value == "") {
+                return;
+            }
+
+            let newOption = document.createElement("option");
+            newOption.innerHTML = input.value;
+            console.log(newOption);
+
+            if (lista.firstChild = (document.getElementById("placeholder"))) {
+                lista.innerHTML = "";
+            }
+
+
+            lista.appendChild(newOption);
+
+            input.value = "";
+        }
+
+    </script>
+</body>
+
+</html>
