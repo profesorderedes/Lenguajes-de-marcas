@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 09</title>
+
+    <style>
+        #contenedor {
+            border: 3px solid greenyellow;
+            width: fit-content;
+            overflow: auto;
+        }
+
+        .cuadrado{
+            float: left;
+            margin: 5px;
+            padding: 10px;
+            width: 50px;
+            height: 50px;
+        }
+
+        #rojo {
+            background-color: red;
+        }
+
+        #verde {
+            background-color: green;
+        }
+
+        #azul {
+            background-color: blue;
+        }
+
+        #amarillo {
+            background-color: yellow;
+        }
+
+        #naranja {
+            background-color: orange;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Ocultar dvis</h1>
+
+    <p>Haz click en los siguientes cuadrados para hacerlos desaparecer</p>
+
+    <div id="contenedor">
+
+        <div id="rojo" class="cuadrado"></div>
+        <div id="verde" class="cuadrado"></div>
+        <div id="azul" class="cuadrado"></div>
+        <div id="amarillo" class="cuadrado"></div>
+        <div id="naranja" class="cuadrado"></div>
+
+    </div>
+
+    <script>
+        "use strict"
+
+        document.getElementById('rojo').addEventListener('click', function () { eliminarDiv(this) });
+        document.getElementById('verde').addEventListener('click', function () { eliminarDiv(this) });
+        document.getElementById('azul').addEventListener('click', function () { eliminarDiv(this) });
+        document.getElementById('amarillo').addEventListener('click', function () { eliminarDiv(this) });
+        document.getElementById('naranja').addEventListener('click', function () { eliminarDiv(this) });
+
+        function eliminarDiv(elemento) {
+            elemento.remove();
+        }
+
+    </script>
+</body>
+
+</html>
