@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 22</title>
+    <style>
+        label {
+            display: block;
+        }
+
+        input {
+            margin: 0 3px 5px 0;
+        }
+
+        input[type='submit'] {
+            display: block;
+        }
+
+        span {
+            color: red;
+            font-size: 0.7rem;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Validación de formularios</h1>
+
+    <form action="" onsubmit="return validar()">
+
+        <label for="nombre">Usuario</label>
+        <input type="text" name="nombre" id="nombre"><span>*Obligatorio</span>
+
+        <label for="password">Pasword</label>
+        <input type="password" name="password" id="password"><span>*Obligatorio</span>
+
+        <input type="submit" value="Autenticar">
+
+    </form>
+
+    <script>
+        'use strict'
+
+        function validar() {
+
+            let nombre = document.querySelector('#nombre');
+            let password = document.querySelector('#password');
+
+            let spans = document.querySelectorAll('span');
+
+            if(nombre.value == '' && password.value == '' ){
+                spans[0].style.visibility = 'visible';
+                spans[1].style.visibility = 'visible';   
+                return false;
+            }
+            
+            if (nombre.value == '' ) {
+                spans[0].style.visibility = 'visible';
+                spans[1].style.visibility = 'hidden';
+                return false;
+            }
+
+             if (password.value == '') {
+                spans[0].style.visibility = 'hidden';
+                spans[1].style.visibility = 'visible';
+                return false;
+            }
+
+            return true;
+        }
+
+    </script>
+</body>
+
+</html>
