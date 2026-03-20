@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 24</title>
+</head>
+<body>
+    <h1>JSON</h1>
+
+    <script>
+        'use strict'
+
+        let libro = {
+            titulo: 'El perro de los Baskerville',
+            autor: 'Arthur Conan Doyle',
+            isbn: '84-81821-1',
+            numPaginas: 400
+        }
+
+        let texto = JSON.stringify(libro);
+
+        console.log(texto);
+    </script>
+</body>
+</html>

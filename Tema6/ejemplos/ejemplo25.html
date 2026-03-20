@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 25</title>
+</head>
+
+<body>
+    <h1>Arrow functions</h1>
+
+    <script>
+        'use strict'
+
+        let numeros = [1, 2, 3, 4, 5];
+
+        function cuadrado(num) {
+            console.log(num ** 2);
+        }
+
+        numeros.forEach(cuadrado);
+
+        // Arrow functions: funciones sin nombre declaradas en el lugar donde se necesitan
+
+        numeros.forEach(
+            (num) => { console.log(num * num); }
+        );
+
+        // Si sólo tiene un parámetro, no hace falta usar paréntesis.
+
+        numeros.forEach(
+            num => { console.log(num * num); }
+        );
+
+        // Si sólo ejecuta una instrucción, se pueden quitar las llaves.
+        numeros.forEach(
+            num => console.log(num * num)
+        );
+
+        // Si tiene que devolver algo y sólo tiene una línea, el return no es necesario que aparezca.
+        // num => loquesea        
+        function cubo(num){
+            return num**3;
+        }
+
+        // La función cubo quedaría así expresada:
+        // num => num**3
+
+    </script>
+</body>
+
+</html>

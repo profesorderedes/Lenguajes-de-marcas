@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 26</title>
+</head>
+
+<body>
+    <h1>Openweathermap</h1>
+
+    <script>
+        'use strict'
+
+        let url = "http://api.openweathermap.org/data/2.5/forecast?q=Oslo&appid=7dcc6bb908fc23a49ee9184422cc7cfd";
+
+        fetch(url)
+            .then(
+                res => res.json()
+            )
+            .then(
+                res => console.log(res)
+            )
+            .catch(
+                error => console.log('Error descargando los datos.')
+            );
+
+        // Promise
+        // then()
+        // catch()
+
+    </script>
+</body>
+
+</html>
