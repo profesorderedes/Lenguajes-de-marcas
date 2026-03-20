@@ -1,0 +1,34 @@
+{
+    "articulos": [
+        {
+            "descripcion": "Samsung Galaxy A32",
+            "precio": 239,
+            "memoria_interna": 128,
+            "ram": 4,
+            "accesorios": [
+                "Cargador",
+                "Auriculares"
+            ]
+        },
+        {
+            "descripcion": "Xiaomi Mi 10T Lite",
+            "precio": 279,
+            "memoria_interna": 128,
+            "ram": 6,
+            "accesorios": [
+                "Cargador",
+                "Protector de pantalla"
+            ]
+        },
+        {
+            "descripcion": "Oppo A73 5G",
+            "precio": 239,
+            "memoria_interna": 128,
+            "ram": 8,
+            "accesorios": [
+                "Cargador",
+                "Auriculares bluetooth"
+            ]
+        }
+    ]
+}
