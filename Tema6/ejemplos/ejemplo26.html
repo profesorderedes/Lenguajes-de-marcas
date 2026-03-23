@@ -13,22 +13,53 @@
     <script>
         'use strict'
 
-        let url = "http://api.openweathermap.org/data/2.5/forecast?q=Oslo&appid=7dcc6bb908fc23a49ee9184422cc7cfd";
+        let url = "http://api.openweathermap.org/data/2.5/forecast?q=Palma&appid=7dcc6bb908fc23a49ee9184422cc7cfd";
 
         fetch(url)
             .then(
                 res => res.json()
             )
             .then(
-                res => console.log(res)
+                res => {
+                    let ciudad = res.city.name;
+                    console.log("Ciudad: " + ciudad);
+
+                    let poblacion = res.city.population;
+                    console.log("Población: " + poblacion + " habitantes");
+
+                    let temperatura = res.list[0].main.temp - 273.15;
+                    console.log("Temperatura: " + temperatura.toFixed(1) + "ºC");
+
+                    let orto = epoch(res.city.sunrise);
+                    console.log("Salida del Sol: " + orto);
+
+                    let ocaso = epoch(res.city.sunset);
+                    console.log("Puesta del Sol: " + ocaso);
+
+                    let humedad = res.list[0].main.humidity;
+                    console.log("Humedad: " + humedad + "%");
+
+                    let presion = res.list[0].main.pressure;
+                    console.log("Presión: " + presion + " mbar");
+
+                    let velViento = res.list[0].wind.speed * 3600 / 1000;
+                    console.log("Velocidad del viento: " + velViento.toFixed(1) + " km/h");
+
+
+                }
             )
             .catch(
                 error => console.log('Error descargando los datos.')
             );
 
-        // Promise
-        // then()
-        // catch()
+        function epoch(tiempo) {
+            let tiempoNormal = new Date(tiempo * 1000);
+
+            let minutos = (tiempoNormal.getMinutes() < 10) ? "0" + tiempoNormal.getMinutes() : tiempoNormal.getMinutes();
+            let segundos = (tiempoNormal.getSeconds() < 10) ? "0" + tiempoNormal.getSeconds() : tiempoNormal.getSeconds();
+
+            return tiempoNormal.getHours() + ":" + minutos + ":" + segundos;
+        }
 
     </script>
 </body>
