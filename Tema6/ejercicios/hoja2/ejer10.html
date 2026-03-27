@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+
+    <style>
+        select {
+            display: block;
+            width: 300px;
+            height: 100px;
+            margin-top: 10px;
+            overflow-y: scroll;
+            background-color: antiquewhite;
+            border: 2px solid blue;
+            margin-bottom: 10px;
+        }
+
+        option {
+            color: blue;
+        }
+
+        button {
+            text-align: center;
+            width: 150px;
+            height: 25px;
+            background-color: rgb(255, 109, 133);
+            border-radius: 0px;
+            border: 0px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Eliminar elementos de una lista</h1>
+    <p>
+        Usuarios con permiso de administrador en la aplicacion.
+        pulsa el boton para retirarle estos permisos.
+    </p>
+
+    <select name="listaUsuarios" id="listaUsuarios" size="2">
+        <option id="usuario1">csogorb</option>
+        <option id="usuario2">lfernandez</option>
+        <option id="usuario3">ntorres</option>
+        <option id="usuario4">pmas</option>
+    </select>
+
+    <button id="boton">Eliminar usuario</button>
+
+    <script>
+        "use strict"
+
+        let usuarioSeleccionado;
+
+        document.querySelector('#usuario1').addEventListener('click', function () { seleccionarUsuario(this) });
+        document.querySelector('#usuario2').addEventListener('click', function () { seleccionarUsuario(this) });
+        document.querySelector('#usuario3').addEventListener('click', function () { seleccionarUsuario(this) });
+        document.querySelector('#usuario4').addEventListener('click', function () { seleccionarUsuario(this) });
+
+        document.querySelector('#boton').addEventListener('click', () => usuarioSeleccionado.remove());
+
+        function seleccionarUsuario(opcion) {
+            usuarioSeleccionado = opcion;
+        }
+
+    </script>
+</body>
+
+</html>
