@@ -1,1 +1,0 @@
-//autor[.="Milan Kundera"]/../titulo/text()
