@@ -1,4 +1,2 @@
-(: 6.- Horas semanales de los módulos de más de 3 horas semanales: :)
+(: 3.- Nombre de los módulos de ciclos de Grado Superior: :)
 
-(: //modulo[horasSemanales > 3]/horasSemanales/text() :)
-//horasSemanales[. > 3]/text()
