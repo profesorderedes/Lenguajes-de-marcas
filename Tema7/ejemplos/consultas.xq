@@ -1,2 +1,2 @@
-for $x at $i in doc("llibres.xml")//llibre
-return <libro>{$i}) {$x/titol/data()}</libro>
+let $x := doc("llibres.xml")//preu
+return <total>sum($x)</total>
