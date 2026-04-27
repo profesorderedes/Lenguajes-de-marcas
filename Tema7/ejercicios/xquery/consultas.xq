@@ -1,5 +1,4 @@
-(: 2.- Localizadores de las reservas que se han cobrado en euros, indicando también la moneda: :)
+(: 10.- Suma de los precios de todas las reservas. :)
 
-for $x in doc("vuelos.xml")//reserva
-where $x/precio/@moneda="euro"
-return <localizador>{$x//@moneda}{$x/localizador/data()}</localizador>
+let $x := doc("vuelos.xml")//precio
+return sum($x)
