@@ -1,0 +1,30 @@
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+th {
+    background-color: aquamarine;
+}
+
+.azul {
+    color: blue;
+}
+
+.rojo {
+    color: red;
+}
+
+.verde {
+    color: green;
+}

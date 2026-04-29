@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cdcatalog.xsl"?>
+<catalog>
+    <cd>
+        <title>Empire Burlesque</title>
+        <artist>Bob Dylan</artist>
+        <country>USA</country>
+        <company>Columbia</company>
+        <price>10.90</price>
+        <year>1985</year>
+    </cd>
+    <cd>
+        <title>Slow Train Coming</title>
+        <artist>Bob Dylan</artist>
+        <country>USA</country>
+        <company>Columbia</company>
+        <price>15.00</price>
+        <year>1985</year>
+    </cd>
+    <cd>
+        <title>Making Moves</title>
+        <artist>Dire Straits</artist>
+        <country>USA</country>
+        <company>Warner Records</company>
+        <price>21</price>
+        <year>1980</year>
+    </cd>
+    <cd>
+        <title>Let It Be</title>
+        <artist>The Beatles</artist>
+        <country>USA</country>
+        <company>Apple Records</company>
+        <price>16</price>
+        <year>1970</year>
+    </cd>
+</catalog>

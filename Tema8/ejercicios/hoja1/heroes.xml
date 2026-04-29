@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="heroes1.xsl"?>
+
+<heroes>
+    <heroe>
+        <nombre>Spiderman</nombre>
+        <descripcion>Se trata de un superhéroe que emplea sus habilidades sobrehumanas,
+            reminiscentes de una araña, para combatir a otros supervillanos que persiguen fines
+            siniestros.</descripcion>
+        <foto>img/spiderman.jpg</foto>
+    </heroe>
+    <heroe>
+        <nombre>Scarlett Witch</nombre>
+        <descripcion>El personaje, presentado en sus inicios como una mutante, posee habilidades
+            para alterar la realidad de formas no especificadas y es, además, una poderosa
+            hechicera.</descripcion>
+        <foto>img/scarletwitch.webp</foto>
+    </heroe>
+    <heroe>
+        <nombre>Iron Man</nombre>
+        <descripcion>Anthony Edward Stark, más conocido como Tony Stark, es un personaje ficticio
+            que da vida a este personaje, un multimillonario magnate empresarial y filántropo
+            estadounidense, playboy e ingenioso científico, que sufrió una grave lesión en el pecho
+            durante un secuestro en el Medio Oriente.</descripcion>
+        <foto>img/ironman.jpg</foto>
+    </heroe>
+</heroes>
