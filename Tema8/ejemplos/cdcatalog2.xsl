@@ -22,7 +22,7 @@
         <p> 
             <xsl:apply-templates select="title" />
             <br/>
-            Autor: <xsl:value-of select="artist" />
+            <xsl:apply-templates select="artist" />
         </p>
     </xsl:template>
 
@@ -30,6 +30,8 @@
          Título: <xsl:value-of select="." />
     </xsl:template>
 
-    
+     <xsl:template match="artist">
+         Autor: <xsl:value-of select="." />
+    </xsl:template>
 
 </xsl:stylesheet>

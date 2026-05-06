@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+    width: 70%;
+    margin: auto;
+}
+
+h1 {
+    max-width: max-content;
+    color: red;
+    font-size: 3rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+table {
+    border: 1px solid rgba(128, 128, 128, 0.311);
+    border-collapse: collapse;
+}
+
+th {
+    color: white;
+    padding: 0.5rem 1rem;
+    background-color: red;
+    border: 1px solid rgba(128, 128, 128, 0.311);
+}
+
+td {
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(128, 128, 128, 0.311);
+    text-align: center;
+}
+
+img {
+    width: 125px;
+}
+
+.nombre {
+    width: 10%;
+}
+
+.descripcion {
+    width: 75%;
+}
